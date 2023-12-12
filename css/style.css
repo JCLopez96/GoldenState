@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Se establecen los tipos de fuente del sitio*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+#header #navbar ul li {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.bannerBox {
+  font-family: "Kaushan Script", cursive;
+}
+
+li , a {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: black
+}
+
+#main {
+  min-height: 100vh;
+  background-color: black;
+}
+
+/*Se establece los estilos del header y el nav*/
+#header {
+  width: 100%;
+  height: 80px;
+}
+
+#navbar {
+  background-color: #1c389b;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+#navbar img #navbar ul {
+  display: inline-block;
+}
+
+#navbar ul li , #navbar a{
+  margin-left: 20px;
+  font-size: 25px;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;  
+  transition: 1s;
+}
+
+#navbar a:hover {
+  color: #e4c145;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+#navbar img {
+  width: auto;
+  height: 65px;
+}
+
+/*Se establece el estilo del main del Index*/
+#main {
+  width: auto;
+  height: auto;
+  background-color: black;
+}
+
+#imagenPortada img {
+  width: 100%;
+  height: 600px;
+}
+
+#inseason {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+
+#inseason img {
+  width: 600px;
+  height: 400px;
+  padding: 40px 0px 50px 60px;
+}
+
+.explicacionInseason {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #e4c145;
+  padding: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 50px;
+  border-style: solid;
+  border-color: black;
+}
+
+#bannerBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#bannerBox img {
+  height: 350px;
+  width: 280px;
+  transition: 0.5s;
+  padding: 20 px;
+}
+
+#bannerBox a {
+  background-color: #e4c145;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 70px;
+  font-size: 30px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+
+#bannerBox a:hover {
+  font-size: 35px;
+  transition: 1s;
+}
+
+#Allstargame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+
+#Allstargame img {
+  width: 600px;
+  height: 400px;
+  padding: 40px 60px 50px 0px;
+}
+
+.explicacionAllstar {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #e4c145;
+  padding: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  border-style: solid;
+  border-color: black;
+}
+
+/*Se estable el estilo del Footer*/
+#footer {
+  background-color: #1c389b;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer img {
+  width: 120px;
+  height: 70px;
+}
+
+.footerFan {
+  background-color: #e4c145;
+  font-family: "Kaushan Script", cursive;
+  border-style: solid;
+  border-color: black;
+  border-radius: 100px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footerRedes {
+  margin-left: 20px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 20px;
+}
+
+.footerRedes h1 {
+  padding: 10px;
+}
+
+.fa-brands {
+  padding: 5px;
+}
