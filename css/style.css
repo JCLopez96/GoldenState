@@ -1,4 +1,5 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,165 +7,445 @@
 }
 
 /*Se establecen los tipos de fuente del sitio*/
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
-
-#header #navbar ul li {
-  font-family: "Barlow Condensed", sans-serif;
+#body {
+  background-color: black;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 .bannerBox {
   font-family: "Kaushan Script", cursive;
 }
 
-li , a {
+li, a {
   display: inline-block;
   list-style: none;
   text-decoration: none;
-  color: black
-}
-
-#main {
-  min-height: 100vh;
-  background-color: black;
+  color: black;
 }
 
 /*Se establece los estilos del header y el nav*/
 #header {
   width: 100%;
-  height: 80px;
+  height: 100px;
+  background-color: #1c389b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-#navbar {
-  background-color: #1c389b;
-  width: 100%;
-  height: 100%;
+
+#navbarBanner {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
-#navbar img #navbar ul {
-  display: inline-block;
-}
-
-#navbar ul li , #navbar a{
-  margin-left: 20px;
-  font-size: 25px;
-  color: white;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: bold;  
-  transition: 1s;
-}
-
-#navbar a:hover {
-  color: #e4c145;
+.navbarBanner__list {
   font-size: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.navbarBanner__a {
+  padding: 20px;
+  color: white;
   transition: 0.5s;
 }
 
-#navbar img {
+.navbarBanner__list :hover {
+  color: #e4c145;
+  transition: 0.5s;
+}
+
+.navbarBanner__img {
   width: auto;
-  height: 65px;
+  height: 90px;
 }
 
 /*Se establece el estilo del main del Index*/
+
 #main {
   width: auto;
   height: auto;
-  background-color: black;
 }
 
-#imagenPortada img {
+/*Index principal*/
+
+.goldenIndex {
+  background-image: url(../images/index/plano-lejano-vista-ciudad-san-francisco-noche.jpg);
+  background-position: center;
+  background-attachment:local;
+  background-size: cover;
+  height: 500px;
+}
+
+.goldenIndex__video {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
-#inseason {
+
+
+/*Index Pages*/
+
+#bannerPages {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 0px;
+  margin: 30px;
+  margin-top: 100px;
 }
 
-#inseason img {
-  width: 600px;
-  height: 400px;
-  padding: 40px 0px 50px 60px;
-}
-
-.explicacionInseason {
-  font-family: "Barlow Condensed", sans-serif;
+.bannerPages__body {
   background-color: #e4c145;
-  padding: 60px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 50px;
-  border-style: solid;
+  width: 300px;
+  padding: 20px;
   border-color: black;
+  border-style: solid;
+  margin-right: 5px;
+  margin-top: 0;
 }
 
-#bannerBox {
+
+.bannerPages__img {
+  height: 320px;
+  width: 282px;
+  margin: 8px;
+  margin-bottom: 0px;
+}
+
+.bannerPages__titulo{
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.bannerPages__text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #1c389b;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-color: black;
+  border-radius: 10px;
+}
+
+/*Index Inseason tournament*/
+
+#bannerInseason {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px;
+  margin-top: 100px;
+  border-style: solid;
+  border-color: #e4c145;;
+}
+
+.bannerInseason__body{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 50px;
+}
+.bannerInseason__logo {
+  width: 700px;
+  height: 200px;
+  align-items: center;
+  border-color: #e4c145;
+  border-style: solid;
+}
+
+.bannerInseason__title{
+  font-family:"Barlow Condensed", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+
+.bannerInseason__text {
+  font-family:"Barlow Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+.bannerInseaon-grupos__img {
+  width: 500px;
+  height: 450px;
+}
+
+
+/*Index All stargame*/
+
+#bannerAllstar {
+  margin: 20px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: #e4c145;
+  display: flex;
+  align-items: center;
+}
+
+.bannerAllstar__title {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.bannerAllstar__text{
+  text-align: center;
+  margin: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+.bannerAllstar-logo__img{
+  width: 500px;
+  height: 450px;
+}
+
+/*Index calendario*/
+
+.carousel-inner {
+  width: 900px;
+  padding: 20px;
+  margin-left: 18%;
+  margin-bottom: 40px;
+}
+
+.carouselCalendario {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #e4c145;
+}
+
+
+/*Pagina en desarrollo*/
+
+.bannerPaginanueva {
+  height: 445px;
+  background-color: black;
+  font-family:"Barlow Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
   padding: 30px;
 }
 
-#bannerBox img {
-  height: 350px;
-  width: 280px;
-  transition: 0.5s;
-  padding: 20 px;
+.progress{
+  margin: 20px;
 }
 
-#bannerBox a {
-  background-color: #e4c145;
+
+/*Pagina de historia*/
+
+
+#historiaLogos {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.historiaLogos__h1 {
   text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  height: 70px;
-  font-size: 30px;
-  padding: 10px;
-  transition: 0.5s;
-}
-
-
-#bannerBox a:hover {
-  font-size: 35px;
-  transition: 1s;
-}
-
-#Allstargame {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 0px;
-}
-
-#Allstargame img {
-  width: 600px;
-  height: 400px;
-  padding: 40px 60px 50px 0px;
-}
-
-.explicacionAllstar {
-  font-family: "Barlow Condensed", sans-serif;
+  padding: 20px;
+  font-family: "Kaushan Script", cursive;
+  color: black;
   background-color: #e4c145;
-  padding: 60px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 50px;
-  border-style: solid;
   border-color: black;
+  border-style: solid;
+  margin: 0 500px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.historiaLogos__p {
+  margin: 40px;
+  text-align: justify;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+/*Historia imagenes Primera parte*/
+
+#historiaImagenes {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+/*Acordion Logos*/
+
+#accordionExample{
+  margin: 40px;
+}
+.accordionTitle{
+  text-align: center;
+  padding: 20px;
+  font-family: "Kaushan Script", cursive;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 500px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.accordion-button{
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif; 
+  background-color: #e4c145;
+}
+
+.accordioExample__img {
+  width: auto;
+  height: 250px;
+  padding: 30px;
+}
+
+.accordion-body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.accordionLogo__img1 {
+  border-radius: 50%;
+}
+
+.accordionLogo__img2{
+  border-radius: 50%;
+}
+
+.accordionLogo__explicacion {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 30px;
+}
+
+
+/*Historia actualidad*/
+
+#historiaActualidad {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.historiaActualidad__h1 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Kaushan Script", cursive;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 500px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.historiaActualidad__p{
+  margin: 40px;
+  text-align: justify;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+/*Acordion Campeonatos*/
+
+.accordionCampeonato__title{
+  text-align: center;
+  padding: 20px;
+  font-family: "Kaushan Script", cursive;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 500px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.accordionCampeonato__explicacion {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 30px;
+}
+
+/*Lideres Historicos*/
+
+.lideresHistoricos__h1 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Kaushan Script", cursive;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 500px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+#lideresHistoricos__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px;
+}
+
+.bannerLideres-card__img {
+  width: auto;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.bannerLideres__titulo {
+  font-size: 35px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.bannerLideres__text {
+  font-size: 40px;
+  font-family: "Barlow Condensed", sans-serif ;
+  text-align: center;
+  color: #e4c145;
+  font-weight: bold;
 }
 
 /*Se estable el estilo del Footer*/
-#footer {
+
+#footerBanner {
   background-color: #1c389b;
   width: 100%;
   height: 100%;
@@ -173,12 +454,12 @@ li , a {
   justify-content: space-between;
 }
 
-#footer img {
+.footerBanner-logo__img {
   width: 120px;
   height: 70px;
 }
 
-.footerFan {
+.footerBanner__fan {
   background-color: #e4c145;
   font-family: "Kaushan Script", cursive;
   border-style: solid;
@@ -191,20 +472,16 @@ li , a {
   padding: 10px;
 }
 
-.footerRedes {
+.footerBanner__redes{
   margin-left: 20px;
-  font-size: 15px;
   color: white;
   display: flex;
   align-items: center;
-  font-family: "Barlow Condensed", sans-serif;
   padding: 20px;
-}
-
-.footerRedes h1 {
-  padding: 10px;
 }
 
 .fa-brands {
   padding: 5px;
 }
+
+/*# sourceMappingURL=style.css.map */

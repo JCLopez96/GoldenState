@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../css/style.css">
-
             <!--LIBRERIA DE ICONOS-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <!-- ESTILOS DE HOVER -->
+            <link rel="stylesheet" href="css/hover.css">
 
             <!--ESTILOS DE FUENTE-->
             <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,42 +20,323 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
 
-        <title>Historia</title>
+            <!-- LOGO DE LA PAGINA WEB -->
+            <link rel="icon" type="image/png" href="../icons/d6da838012c4b.png.ico">
+
+            <!-- LIBREIRA BOOTSTRAP -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+            <link rel="stylesheet" href="../css/style.css">
+        <title>Historia | Golden State Warriors</title>
 
     </head>
-    <body>
+    <body id="body">
         <header id="header">
-
-            <nav id="navbar">
-                <img src="../icons/navbar/goldenstatelogonav.png" alt="">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li><a href="../pages/equipo.html">Equipo y Estadística</a></li>
-                    <li><a href="../pages/fundacion.html">Fundación</a></li>
-                    <li><a href="../pages/estadio.html">Estadio y Uniformes</a></li>
+            <nav id="navbarBanner">
+                <img class="navbarBanner__escudo1  navbarBanner__img"src="../icons/navbar/goldenstatelogonav.png" alt="" />
+                <ul class="navbarBanner__list">
+                    <li><a class="navbarBanner__inicio navbarBanner__a" href="../index.html">Inicio</a></li>
+                    <li><a class="navbarBanner__historia navbarBanner__a" href="#">Historia</a></li>
+                    <li><a class="navbarBanner__equipo navbarBanner__a" href="../pages/equipo.html">Equipo y Estadística</a></li>
+                    <li><a class="navbarBanner__fundacion navbarBanner__a" href="../pages/fundacion.html">Fundación</a></li>
+                    <li><a class="navbarBanner__estadio navbarBanner__a" href="../pages/estadio.html">Estadio y Uniformes</a></li>
                 </ul>
-                <img src="../icons/navbar/nbalogonav.png" alt="">
+                <img class="navbarBanner__escudo2  navbarBanner__img" src="../icons/navbar/nbalogonav.png" alt="" />
             </nav>
-
         </header>
 
-        <footer id="footer">
-            <article class="footerImagen">
-                <img src="../icons/footer/strengthnumberfooter.png" alt="">
-            </article>
+        <main id="main">
+            <section id="historiaLogos">
+                <h1 class="historiaLogos__h1">Primeros Años</h1>
+                <p class="historiaLogos__text1 historiaLogos__p">
+                    El equipo fue fundado en Filadelfia en 1946 con el nombre de Philadelphia Warriors como miembro de la Basketball Association of America (BAA). A principios de la década de 1960 se mudaron al área de la Bahía de San Francisco, donde primero adoptaron el nombre de San Francisco Warriors y en 1971, el nombre con el que se los conoce en la actualidad.
+                </p>
 
-            <article class="footerFan">
+                <p class="historiaLogos__text2 historiaLogos__p">
+                    En la 1971-72, cambiaron su nombre a Golden State Warriors, jugando casi todos sus encuentros de locales en Oakland. Seis partidos fueron en San Diego esa temporada, pero ninguno en San Francisco o Daly City. Golden State (Estado Dorado) es el sobrenombre de California por sus doradas colinas y por la Fiebre del Oro de 1849.
+
+                    Los Warriors ganaron su primer campeonato en la Costa Oeste en la campaña 1974-75. En lo que muchos consideran la mayor sorpresa en la historia de la NBA, los Warriors derrotaron a Washington Bullets en las Finales de la NBA, barriéndoles en cuatro partidos. Aquel equipo estaba entrenado por Al Attles, y liderado en cancha por Rick Barry, Jamaal Wilkes y Phil Smith. Se confiaba tan poco en que el equipo llegara lejos en playoffs que se programó otros eventos en el Coliseum Arena para esas fechas. Por consiguiente, los Warriors jugaron sus partidos en casa en postemporada en el Cow Palace en Daly City.
+                </p>
+            </section>
+
+            <section id="historiaImagenes">
+                <img class="historiaImagenes__img1" src="../images/historia/philadelphiacampeon.jpg" alt="">
+                <img class="historiaImagenes__img2" src="../images/historia/goldenstatecampeon.jpg" alt="">
+            </section>
+
+            <section id="acordionLogos">
+                <h1 class="accordionTitle">Logos</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1946 - 1962
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionLogo__img1 accordioExample__img" src="../images/historia/philadelphialogo.png" alt="">
+                            <p class="accordionLogo__explicacion">
+                                El logotipo original, presentado en 1946 para los Philadelphia Warriors, estaba compuesto por una imagen simple pero divertida de un hombre nativo americano ejecutado en líneas azules y una pelota de baloncesto amarilla. La inscripción diagonal de "Warriors" se coloca sobre la imagen y se equilibra con una pluma en el cabello del hombre.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        1962 - 1997
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionLogo__img2 accordioExample__img" src="../images/historia/sanfranciscowarriors.jpg" alt="">
+                            <p class="accordionLogo__explicacion">
+                                El club se trasladó a San Francisco en 1962 y su logotipo se cambió ese mismo año. El nuevo emblema presentaba un medallón circular compuesto por un delgado contorno amarillo, un marco blanco grueso y un pequeño círculo amarillo en el centro. El tocado indio de plumas azules se colocó en la parte amarilla de la insignia, mientras que la marca denominativa se escribió en una parte blanca, alrededor del perímetro de la insignia
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        1997 - 2010
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionLogo__img3 accordioExample__img" src="../images/historia/oklandwarriors.png" alt="">
+                            <p class="accordionLogo__explicacion">
+                                El emblema de estilo cómic fue creado para el club en 1997. El superhéroe alienígena en azul degradado se colocó en un fondo negro de baloncesto sobre la inscripción estilizada amarilla y naranja en un contorno azul. Las letras se ejecutaron en un tipo de letra moderno y elegante con las líneas de la letra «W» alargadas y dibujadas como un rayo de luz. Esta insignia permaneció en el club durante más de una década.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            2010 - Actualidad
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionLogo__img4 accordioExample__img" src="../images/historia/logogs.png" alt="">
+                            <p class="accordionLogo__explicacion">
+                                El rediseño de 2010 trajo una nueva insignia para el equipo de baloncesto: un medallón de bucle azul claro en un contorno doble amarillo-azul con una imagen elegante y sofisticada del puente dibujada en él con líneas amarillas. La marca denominativa azul en todas las mayúsculas se colocó tanto en la parte superior como en la inferior del medallón y se ejecutó con una elegante tipografía serif con contornos amplios y sólidos de las letras y delicadas serifas afiladas.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="historiaActualidad">
+                <h1 class="historiaActualidad__h1">Actualidad</h1>
+                <p class="historiaActualidad__text1 historiaActualidad__p">
+                    Los Warriors son una de las tres franquicias originales de la NBA que sobreviven en la actualidad y a lo largo de su historia han ganado un total de siete campeonatos de liga (son el tercer equipo más laureado de la competición, únicamente por detrás de los Boston Celtics y Los Angeles Lakers), siete títulos de Conferencia y doce títulos divisionales. Además, poseen el mejor registro de todos los tiempos en una temporada regular (73-9 en la 2015-16) y en unos Playoffs (16-1 en 2017). De acuerdo con la revista Forbes, los Golden State Warriors son el tercer club deportivo más valioso del mundo y el primero de la NBA con un valor estimado de 7000 millones de dólares.
+                </p>
+            </section>
+
+            <section id="acordionCampeonatos">
+                <h1 class="accordionCampeonato__title">Campeonatos</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Finales 1946-1947
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionCampeonato__img1 accordioExample__img" src="../images/historia/campeonato1947.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion">
+                            La temporada regular de 60 partidos perteneció a los Washington Capitols, dirigidos por Red Auerbach con un récord de 49-11, incluida una marca de 29-1 en casa. Pero en los playoffs, Chicago sorprendió a los Capitols gracias al juego de Max Zaslofsky y el centro Chuck Halbert para avanzar a las Finales. Filadelfia, entrenada por Eddie Gottlieb, quien tenía la experiencia profesional más extensa de todos en la BAA, derrotó a St. Louis y Nueva York para avanzar a las Finales. Fulks, Howie Dallmar y Angelo Musi llevaron a Filadelfia a superar a Chicago y los Warriors ganaron el primer título de liga por 4-1.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Finales 1955-1956
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionCampeonato__img2 accordioExample__img" src="../images/historia/campeonato1956.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion"> 
+                            Las Finales de la NBA de 1956 fueron las series definitivas de los playoffs de 1956 y suponían la conclusión de la temporada 1955-56 de la NBA. Estas enfrentaron a Philadelphia Warriors ante Fort Wayne Pistons, con la ventaja de campo favorable a los primeros.
+                            Con una ventaja de 3-1, los Warriors se presentaron al quinto partido dispuestos a cerrar la eliminatoria. Con una fuerte defensa y un buen ataque, en el que destacaron una vez más Arizin con 30 puntos, y Gabroski con 29. Yardley anotó 30 para los Pistons, pero no fue suficiente, acabando el partido 98-88, para dar su segundo campeonato al presidente de los Warriors, Eddie Gottlieb.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Finales 1974 - 1975
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionCampeonato__img3 accordioExample__img" src="../images/historia/campeonato1975.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion">
+                            Las Finales de la NBA de 1975 fueron las series definitivas de los playoffs de 1975 y suponían la conclusión de la temporada 1974-75 de la NBA, con victoria de Golden State Warriors, campeón de la Conferencia Oeste, sobre Washington Bullets, campeón de la Conferencia Este. En el partido se alinearon cuatro futuros miembros del Basketball Hall of Fame, Elvin Hayes y Wes Unseld por los Bullets, Rick Barry y Jamaal Wilkes por los Warriors.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Finales 2014-2015
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="accordionCampeonato__img4 accordioExample__img" src="../images/historia/campeonato2015.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion">
+                            Las Finales de la NBA de 2015 son las series definitivas de los playoffs del 2015 y supusieron la conclusión de la temporada 2014-15 de la NBA. El título lo disputaron, al mejor de siete partidos, Golden State Warriors por la Conferencia Oeste y Cleveland Cavaliers por la Conferencia Este. Las series comenzaron el 4 de junio y finalizaron el 16 de junio de 2015, dejando a Golden State Warriors como campeón, con un resultado de 4-2. Andre Iguodala fue elegido el MVP de las Finales.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Finales 2016-2017
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <img class="accordionCampeonato__img2 accordioExample__img" src="../images/historia/campeonato2017.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion">
+                            Las Finales de la NBA de 2017 fueron las series definitivas de los playoffs del 2017 y supusieron la conclusión de la temporada 2016-17 de la NBA. El título se disputó al mejor de siete partidos, entre Cleveland y Golden State, entre el 1 y el 12 de junio, con la victoria de Golden State por 4-1.Suponiendo así, el quinto título para la franquicia, segundo en los tres últimos años. El MVP de la final fue para Kevin Durant, que promedió 35.2 puntos con un 56% en tiros de campo.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Finales 2017-2018
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                            <img class="accordionCampeonato__img2 accordioExample__img" src="../images/historia/campeonato2018.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion"> 
+                                El título se disputó, al mejor de siete partidos, siendo el primer encuentro el 31 de mayo, y finalizando el 8 de junio. Esta era la cuarta final consecutiva entre Golden State Warriors y Cleveland Cavaliers. Golden State se proclamó campeón (4-0), siendo este su tercer anillo en cuatro años. Kevin Durant, fue nombrado MVP de las Finales, por segundo año consecutivo.
+                            </p>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Finales 2021-2022
+                            </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <img class="accordionCampeonato__img2 accordioExample__img" src="../images/historia/campeonato2022.jpg" alt="">
+                            <p class="accordionCampeonato__explicacion"> 
+                                Las finales, patrocinadas por servicio de streaming YouTube, se conocen bajo el nombre del patrocinio: 2022 NBA Finals presented by YouTube TV, y las disputaron el vencedor de la Final de la Conferencia Este, los Boston Celtics, y el vencedor de la Final de la Conferencia Oeste, los Golden State Warriors, que se llevaron la serie (4-2), ganado el séptimo título para la franquicia, y donde Stephen Curry fue elegido MVP de las Finales.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lideresHistoricos">
+                <h1 class="lideresHistoricos__h1">Líderes Históricos</h1>
+            </section>
+
+            <section id="lideresHistoricos__content">
+                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
+                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
+                        <div class="bannerLideres-card__body bannerLideres__body">
+                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
+                            <h5 class="bannerLideres__titulo">Puntos</h5>
+                            <p class="bannerLideres-card__text bannerLideres__text">22.050</p>
+                        </div>
+                    </div>
+        
+                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
+                        <img src="../images/historia/thurmond.webp" class="bannerLideres-card__img" alt="...">
+                        <div class="bannerLideres-card__body bannerLideres__body">
+                            <h4 class="bannerLideres__titulo">Nate Thurmond</h4>
+                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Rebotes</h5>
+                            <p class="bannerLideres-card__text bannerLideres__text">12.771</p>
+                        </div>
+                    </div>
+
+                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
+                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
+                        <div class="bannerLideres-card__body bannerLideres__body">
+                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
+                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Asisencias</h5>
+                            <p class="bannerLideres-card__text bannerLideres__text">5.783</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="lideresHistoricos__content">
+                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
+                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
+                        <div class="bannerLideres-card__body bannerLideres__body">
+                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
+                            <h5 class="bannerLideres__titulo">Robos</h5>
+                            <p class="bannerLideres-card__text bannerLideres__text">1.430</p>
+                        </div>
+                    </div>
+        
+                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
+                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
+                        <div class="bannerLideres-card__body bannerLideres__body">
+                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
+                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Partidos Jugados</h5>
+                            <p class="bannerLideres-card__text bannerLideres__text">893</p>
+                        </div>
+                    </div>
+
+                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
+                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
+                        <div class="bannerLideres-card__body bannerLideres__body">
+                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
+                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Triples</h5>
+                            <p class="bannerLideres-card__text bannerLideres__text">3.500</p>
+                        </div>
+                    </div>
+            </section>
+
+        </main>
+    
+        <footer id="footerBanner">
+            <article class="footerBanner__logo">
+                <img class="footerBanner-logo__img" src="../icons/footer/strengthnumberfooter.png" alt="" />
+            </article>
+    
+            <article class="footerBanner__fan">
                 <a href="../pages/haztefan.html">Hazte Fan</a>
-                <i class="fa-solid fa-thumbs-up" style="color: #080808;"></i>
+                <i class="fa-solid fa-thumbs-up" style="color: #080808"></i>
             </article>
-
-            <article class="footerRedes">
-                <h1>Siguenos</h1>
-                <a href="http://www.facebook.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                <a href="https://www.instagram.com/warriors/?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                <a href="https://twitter.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
-                <a href="https://www.youtube.com/warriors"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
-                <a href="https://www.tiktok.com/@warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+    
+            <article class="footerBanner__redes">
+                <a href="http://www.facebook.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i
+                        class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
+                <a href="https://www.instagram.com/warriors/?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i
+                        class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
+                <a href="https://twitter.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i
+                        class="fa-brands fa-x-twitter" style="color: #ffffff"></i></a>
+                <a href="https://www.youtube.com/warriors"><i class="fa-brands fa-youtube" style="color: #ffffff"></i></a>
+                <a href="https://www.tiktok.com/@warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top"><i
+                        class="fa-brands fa-tiktok" style="color: #ffffff"></i></a>
             </article>
         </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </body>
+</html>
