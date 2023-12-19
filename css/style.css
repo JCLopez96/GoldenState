@@ -23,45 +23,38 @@ li, a {
 }
 
 /*Se establece los estilos del header y el nav*/
-#header {
-  width: 100%;
-  height: 100px;
-  background-color: #1c389b;
+
+@media (min-width:320px ) {
+  .navbar {
+  padding: 0px 10px;
   position: sticky;
-  top: 0;
-  z-index: 100;
+  }
 }
-
-
-#navbarBanner {
+#header {
   position: sticky;
   top: 0;
+  z-index: 100 ;
+}
+.navbar{
+  background-color: #1c389b;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 40px;
 }
 
-.navbarBanner__list {
-  font-size: 30px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: bold;
-}
-
-.navbarBanner__a {
-  padding: 20px;
-  color: white;
-  transition: 0.5s;
-}
-
-.navbarBanner__list :hover {
-  color: #e4c145;
-  transition: 0.5s;
-}
-
-.navbarBanner__img {
+.navbar__img {
   width: auto;
-  height: 90px;
+  height: 70px;
+  padding: 0 20px;
+}
+
+.nav-link{
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  flex-direction: row;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
 }
 
 /*Se establece el estilo del main del Index*/
@@ -72,6 +65,45 @@ li, a {
 }
 
 /*Index principal*/
+@media (max-width: 320px) {
+
+  #imagenPortada {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: none;
+    height: none;
+  }
+
+  .goldenIndex {
+  background-image: url(../images/index/uniform-details-sf-slope-1280.avif) !important;
+  }
+
+  #bannerPages {
+    flex-direction: column;
+    margin-top: 20px !important;
+  }
+
+  .bannerPages__body {
+    text-align: center;
+  }
+
+  #bannerInseason {
+    flex-direction: column;
+    display: inline-block !important ;
+  }
+
+  .bannerInseason__logo {
+    width:250px !important;
+  }
+
+  .bannerInseaon-grupos__img {
+    width: 0px !important;
+    height: 0px !important;
+  }
+}
+
 
 .goldenIndex {
   background-image: url(../images/index/plano-lejano-vista-ciudad-san-francisco-noche.jpg);
@@ -100,7 +132,7 @@ li, a {
 
 .bannerPages__body {
   background-color: #e4c145;
-  width: 300px;
+  width: 270px;
   padding: 20px;
   border-color: black;
   border-style: solid;
@@ -111,7 +143,7 @@ li, a {
 
 .bannerPages__img {
   height: 320px;
-  width: 282px;
+  width: 250px;
   margin: 8px;
   margin-bottom: 0px;
 }
@@ -125,7 +157,7 @@ li, a {
 
 .bannerPages__text {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: black;
   font-weight: bold;
 }
@@ -184,7 +216,7 @@ li, a {
   margin-bottom: 15px;
 }
 .bannerInseaon-grupos__img {
-  width: 500px;
+  width: 400px;
   height: 450px;
 }
 
@@ -265,13 +297,13 @@ li, a {
 
 .historiaLogos__h1 {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   font-family: "Kaushan Script", cursive;
   color: black;
   background-color: #e4c145;
   border-color: black;
   border-style: solid;
-  margin: 0 500px;
+  margin: 0 400px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -290,7 +322,7 @@ li, a {
   display: flex;
   justify-content: center;
   width: auto;
-  height: 400px;
+  height: 350px;
   padding: 20px;
   margin-bottom: 70px;
 }
@@ -308,7 +340,7 @@ li, a {
   background-color: #e4c145;
   border-color: black;
   border-style: solid;
-  margin: 0 500px;
+  margin: 0 400px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -364,7 +396,7 @@ li, a {
   background-color: #e4c145;
   border-color: black;
   border-style: solid;
-  margin: 0 500px;
+  margin: 0 400px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -387,7 +419,7 @@ li, a {
   background-color: #e4c145;
   border-color: black;
   border-style: solid;
-  margin: 0 500px;
+  margin: 0 400px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -403,13 +435,13 @@ li, a {
 
 .lideresHistoricos__h1 {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   font-family: "Kaushan Script", cursive;
   color: black;
   background-color: #e4c145;
   border-color: black;
   border-style: solid;
-  margin: 0 500px;
+  margin: 0 400px;
   margin-top: 60px;
   margin-bottom: 50px;
 }
