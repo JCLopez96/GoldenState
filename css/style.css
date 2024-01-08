@@ -1,127 +1,173 @@
+/*IMPORTS*/
+/*ESTILOS DE FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+/*LLAMADOS A LAS FUENTES
+    font-family: 'Oswald', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+*/
+/*RESET*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Se establecen los tipos de fuente del sitio*/
+/*CONFIG PRINCIPAL*/
 #body {
   background-color: black;
 }
 
-.bannerBox {
-  font-family: "Kaushan Script", cursive;
-}
-
 li, a {
-  display: inline-block;
   list-style: none;
   text-decoration: none;
   color: black;
 }
 
-/*Se establece los estilos del header y el nav*/
-
-@media (min-width:320px ) {
-  .navbar {
-  padding: 0px 10px;
-  position: sticky;
-  }
-}
+/*MIXINS NAVBAR*/
+/*ESTILOS DEL HEADER Y DEL NAV*/
 #header {
   position: sticky;
   top: 0;
-  z-index: 100 ;
+  z-index: 100;
 }
-.navbar{
+#header .navbar {
   background-color: #1c389b;
   display: flex;
   align-items: center;
   padding: 0 40px;
 }
-
-.navbar__img {
+#header .navbar__Golden {
+  width: auto;
+  height: 70px;
+  padding: 0 20px;
+}
+#header .navbar__nba {
   width: auto;
   height: 70px;
   padding: 0 20px;
 }
 
-.nav-link{
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 25px;
-  flex-direction: row;
-  color: white;
+#navbarNav .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
   font-weight: bold;
+  color: white;
+  flex-direction: row;
   margin-left: 30px;
 }
+#navbarNav .nav-item :hover {
+  color: #e4c145;
+}
 
-/*Se establece el estilo del main del Index*/
-
+/*MIXINS INDEX*/
+/*ESTILO DEL MAIN*/
 #main {
   width: auto;
   height: auto;
 }
 
-/*Index principal*/
-@media (max-width: 320px) {
-
-  #imagenPortada {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: none;
-    height: none;
-  }
-
-  .goldenIndex {
-  background-image: url(../images/index/uniform-details-sf-slope-1280.avif) !important;
-  }
-
-  #bannerPages {
-    flex-direction: column;
-    margin-top: 20px !important;
-  }
-
-  .bannerPages__body {
-    text-align: center;
-  }
-
-  #bannerInseason {
-    flex-direction: column;
-    display: inline-block !important ;
-  }
-
-  .bannerInseason__logo {
-    width:250px !important;
-  }
-
-  .bannerInseaon-grupos__img {
-    width: 0px !important;
-    height: 0px !important;
-  }
-}
-
-
-.goldenIndex {
+/*ESTILO INDEX*/
+#imagenPortada .goldenIndex {
   background-image: url(../images/index/plano-lejano-vista-ciudad-san-francisco-noche.jpg);
   background-position: center;
-  background-attachment:local;
+  background-attachment: local;
   background-size: cover;
   height: 500px;
 }
-
-.goldenIndex__video {
+#imagenPortada .goldenIndex__video {
   width: 100%;
   height: 500px;
 }
 
+/*INDEX INSEASON TOURNAMENT*/
+#bannerInseason {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 100px;
+  border-style: solid;
+  border-color: #e4c145;
+}
+#bannerInseason .bannerInseason__body {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 50px;
+}
+#bannerInseason .bannerInseason__logo {
+  width: 700px;
+  height: 200px;
+  align-items: center;
+  border-color: #e4c145;
+  border-style: solid;
+}
+#bannerInseason .bannerInseason__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+#bannerInseason .bannerInseason__text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+#bannerInseason .bannerInseaon-grupos__img {
+  width: 400px;
+  height: 450px;
+}
 
+/*INDEX ALL STAR GAME 2025*/
+#bannerAllstar {
+  margin: 20px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: #e4c145;
+  display: flex;
+  align-items: center;
+}
+#bannerAllstar .bannerAllstar__title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  color: white;
+}
+#bannerAllstar .bannerAllstar__text {
+  text-align: center;
+  margin: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+#bannerAllstar .bannerAllstar-logo__img {
+  width: 500px;
+  height: 450px;
+}
 
-/*Index Pages*/
+/*INDEX CALENDARIO*/
+#carouselExampleIndicators .carousel-inner {
+  width: 900px;
+  padding: 20px;
+  margin-left: 14%;
+  margin-bottom: 40px;
+}
+#carouselExampleIndicators .carouselCalendario__title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #e4c145;
+}
 
+/*MIXINS CARDS INDEX*/
+/*INDEX TARJETAS*/
 #bannerPages {
   display: flex;
   align-items: center;
@@ -129,8 +175,7 @@ li, a {
   margin: 30px;
   margin-top: 100px;
 }
-
-.bannerPages__body {
+#bannerPages .bannerPages__body {
   background-color: #e4c145;
   width: 270px;
   padding: 20px;
@@ -139,25 +184,22 @@ li, a {
   margin-right: 5px;
   margin-top: 0;
 }
-
-
-.bannerPages__img {
-  height: 320px;
+#bannerPages .bannerPages__img {
   width: 250px;
+  height: 320px;
   margin: 8px;
   margin-bottom: 0px;
 }
-
-.bannerPages__titulo{
-  font-family: "Kaushan Script", cursive;
-  font-size: 30px;
+#bannerPages .bannerPages__titulo {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
   color: black;
-  font-weight: bold;
+  font-weight: 1000;
+  text-align: center;
 }
-
-.bannerPages__text {
+#bannerPages .bannerPages__text {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   color: black;
   font-weight: bold;
 }
@@ -171,134 +213,18 @@ li, a {
   border-radius: 10px;
 }
 
-/*Index Inseason tournament*/
-
-#bannerInseason {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px;
-  margin-top: 100px;
-  border-style: solid;
-  border-color: #e4c145;;
-}
-
-.bannerInseason__body{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  padding: 50px;
-}
-.bannerInseason__logo {
-  width: 700px;
-  height: 200px;
-  align-items: center;
-  border-color: #e4c145;
-  border-style: solid;
-}
-
-.bannerInseason__title{
-  font-family:"Barlow Condensed", sans-serif;
-  font-size: 35px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  margin-top: 10px;
-}
-
-
-.bannerInseason__text {
-  font-family:"Barlow Condensed", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  margin-bottom: 15px;
-}
-.bannerInseaon-grupos__img {
-  width: 400px;
-  height: 450px;
-}
-
-
-/*Index All stargame*/
-
-#bannerAllstar {
-  margin: 20px;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  border-style: solid;
-  border-color: #e4c145;
-  display: flex;
-  align-items: center;
-}
-
-.bannerAllstar__title {
-  text-align: center;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-}
-
-.bannerAllstar__text{
-  text-align: center;
-  margin: 20px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 25px;
-  color: white;
-}
-.bannerAllstar-logo__img{
-  width: 500px;
-  height: 450px;
-}
-
-/*Index calendario*/
-
-.carousel-inner {
-  width: 900px;
-  padding: 20px;
-  margin-left: 18%;
-  margin-bottom: 40px;
-}
-
-.carouselCalendario {
-  text-align: center;
-  font-family: "Kaushan Script", cursive;
-  color: #e4c145;
-}
-
-
-/*Pagina en desarrollo*/
-
-.bannerPaginanueva {
-  height: 445px;
-  background-color: black;
-  font-family:"Barlow Condensed", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  padding: 30px;
-}
-
-.progress{
-  margin: 20px;
-}
-
-
-/*Pagina de historia*/
-
-
+/*MIXIN HISTORIA*/
+/*ESTILO HISTORIA*/
 #historiaLogos {
   display: inline-block;
   align-items: center;
   justify-content: center;
 }
-
-.historiaLogos__h1 {
+#historiaLogos .historiaLogos__h1 {
   text-align: center;
   padding: 15px;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
   color: black;
   background-color: #e4c145;
   border-color: black;
@@ -307,17 +233,15 @@ li, a {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
-.historiaLogos__p {
+#historiaLogos .historiaLogos__p {
   margin: 40px;
-  text-align: justify;
+  text-align: center;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 30px;
   color: white;
 }
 
-/*Historia imagenes Primera parte*/
-
+/*HISTORIA IMAGENES*/
 #historiaImagenes {
   display: flex;
   justify-content: center;
@@ -327,71 +251,17 @@ li, a {
   margin-bottom: 70px;
 }
 
-/*Acordion Logos*/
-
-#accordionExample{
-  margin: 40px;
-}
-.accordionTitle{
-  text-align: center;
-  padding: 20px;
-  font-family: "Kaushan Script", cursive;
-  color: black;
-  background-color: #e4c145;
-  border-color: black;
-  border-style: solid;
-  margin: 0 400px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.accordion-button{
-  font-weight: bold;
-  font-size: 25px;
-  color: black;
-  font-family: "Barlow Condensed", sans-serif; 
-  background-color: #e4c145;
-}
-
-.accordioExample__img {
-  width: auto;
-  height: 250px;
-  padding: 30px;
-}
-
-.accordion-body{
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-
-.accordionLogo__img1 {
-  border-radius: 50%;
-}
-
-.accordionLogo__img2{
-  border-radius: 50%;
-}
-
-.accordionLogo__explicacion {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 25px;
-  color: white;
-  padding: 30px;
-}
-
-
-/*Historia actualidad*/
-
+/*HISTORIA ACTUALIDAD*/
 #historiaActualidad {
   display: inline-block;
   align-items: center;
   justify-content: center;
 }
-
-.historiaActualidad__h1 {
+#historiaActualidad .historiaActualidad__h1 {
   text-align: center;
   padding: 20px;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
   color: black;
   background-color: #e4c145;
   border-color: black;
@@ -400,21 +270,24 @@ li, a {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
-.historiaActualidad__p{
+#historiaActualidad .historiaActualidad__p {
   margin: 40px;
-  text-align: justify;
+  text-align: center;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 30px;
   color: white;
 }
 
-/*Acordion Campeonatos*/
-
-.accordionCampeonato__title{
+/*MIXINS ACORDIONES*/
+/*ACORDION LOGOS*/
+#acordionLogos {
+  margin: 40px;
+}
+#acordionLogos .accordionTitle {
   text-align: center;
   padding: 20px;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
   color: black;
   background-color: #e4c145;
   border-color: black;
@@ -423,20 +296,123 @@ li, a {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
-.accordionCampeonato__explicacion {
+#acordionLogos .accordion-button {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  background-color: #e4c145;
+}
+#acordionLogos .accordioExample__img {
+  width: auto;
+  height: 250px;
+  padding: 30px;
+}
+#acordionLogos .accordion-body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#acordionLogos .accordionLogo__img1 {
+  border-radius: 50%;
+}
+#acordionLogos .accordionLogo__img2 {
+  border-radius: 50%;
+}
+#acordionLogos .accordionLogo__explicacion {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 25px;
+  text-align: center;
   color: white;
   padding: 30px;
 }
 
-/*Lideres Historicos*/
+#acordionCampeonatos {
+  margin: 40px;
+}
+#acordionCampeonatos .accordionCampeonato__title {
+  text-align: center;
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#acordionCampeonatos .accordion-button {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  background-color: #e4c145;
+}
+#acordionCampeonatos .accordioExample__img {
+  width: auto;
+  height: 250px;
+  padding: 30px;
+}
+#acordionCampeonatos .accordion-body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#acordionCampeonatos .accordionCampeonato__explicacion {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
 
-.lideresHistoricos__h1 {
+/*MIXINS FOOTER*/
+/*FOOTER*/
+#footerBanner {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #1c389b;
+  justify-content: space-between;
+}
+#footerBanner .footerBanner-logo__img {
+  width: 120px;
+  height: 70px;
+}
+#footerBanner .footerBanner__fan {
+  width: 200px;
+  height: 50px;
+  background-color: #e4c145;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+  border-radius: 100px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+#footerBanner .footerBanner__redes {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+  padding: 20px;
+}
+#footerBanner .fa-brands {
+  padding: 5px;
+}
+
+/*MIXINS CARDS HISTORIA*/
+/*LIDERES HISTORICOS*/
+#lideresHistoricos .lideresHistoricos__h1 {
   text-align: center;
   padding: 15px;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
   color: black;
   background-color: #e4c145;
   border-color: black;
@@ -446,74 +422,47 @@ li, a {
   margin-bottom: 50px;
 }
 
-#lideresHistoricos__content{
+#lideresHistoricos__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 90px;
 }
-
-.bannerLideres-card__img {
+#lideresHistoricos__content .bannerLideres-card__img {
   width: auto;
   height: 200px;
   margin-bottom: 20px;
 }
-
-.bannerLideres__titulo {
+#lideresHistoricos__content .bannerLideres__titulo {
   font-size: 35px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
   text-align: center;
   color: white;
-  font-weight: bold;
 }
-
-.bannerLideres__text {
+#lideresHistoricos__content .bannerLideres__text {
   font-size: 40px;
-  font-family: "Barlow Condensed", sans-serif ;
+  font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   color: #e4c145;
   font-weight: bold;
 }
 
-/*Se estable el estilo del Footer*/
-
-#footerBanner {
-  background-color: #1c389b;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footerBanner-logo__img {
-  width: 120px;
-  height: 70px;
-}
-
-.footerBanner__fan {
-  background-color: #e4c145;
-  font-family: "Kaushan Script", cursive;
-  border-style: solid;
-  border-color: black;
-  border-radius: 100px;
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.footerBanner__redes{
-  margin-left: 20px;
+/*Pagina en desarrollo*/
+.bannerPaginanueva {
+  height: 445px;
+  background-color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
   color: white;
-  display: flex;
-  align-items: center;
-  padding: 20px;
+  padding: 30px;
 }
 
-.fa-brands {
-  padding: 5px;
+.progress {
+  margin: 20px;
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

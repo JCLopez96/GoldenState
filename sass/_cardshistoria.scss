@@ -1,0 +1,54 @@
+/*MIXINS CARDS HISTORIA*/
+
+@mixin sizes ($width , $height) {
+    width: $width;
+    height: $height;
+}
+
+/*LIDERES HISTORICOS*/
+
+#lideresHistoricos {
+
+    .lideresHistoricos__h1 {
+        text-align: center;
+        padding: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        color: black;
+        background-color: #e4c145;
+        border-color: black;
+        border-style: solid;
+        margin: 0 400px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+}
+
+
+#lideresHistoricos__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+
+    .bannerLideres-card__img {
+        @include sizes(auto , 200px);
+        margin-bottom: 20px;
+    }
+
+    .bannerLideres__titulo {
+        font-size: 35px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+    .bannerLideres__text {
+        font-size: 40px;
+        font-family: "Barlow Condensed", sans-serif ;
+        text-align: center;
+        color: #e4c145;
+        font-weight: bold;
+    }
+}

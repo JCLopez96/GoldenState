@@ -1,0 +1,59 @@
+/*MIXINS CARDS INDEX*/
+@mixin flex-desing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin sizes ($width , $height) {
+    width: $width;
+    height: $height;
+}
+
+
+/*INDEX TARJETAS*/  
+#bannerPages {
+    @include flex-desing;
+    margin: 30px;
+    margin-top: 100px;
+    .bannerPages__body {
+        background-color: #e4c145;
+        width: 270px;
+        padding: 20px;
+        border-color: black;
+        border-style: solid;
+        margin-right: 5px;
+        margin-top: 0;
+    }
+
+    .bannerPages__img {
+        @include sizes(250px , 320px);
+        margin: 8px;
+        margin-bottom: 0px;
+    }
+
+    .bannerPages__titulo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        color: black;
+        font-weight: 1000;
+        text-align: center;
+    }
+    
+
+    .bannerPages__text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.btn-primary {
+    background-color: #1c389b;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-color: black;
+    border-radius: 10px;
+}
