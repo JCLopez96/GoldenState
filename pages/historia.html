@@ -34,7 +34,7 @@
         <header id="header">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar__logo" href="/index.html">
-                <img class="navbar__Golden" src="/icons/navbar/goldenstatelogonav.png" alt="">
+                <img class="navbar__Golden" src="../icons/navbar/goldenstatelogonav.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,24 +42,24 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">INICIO</a>
+                            <a class="nav-link" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">HISTORIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./equipo.html">EQUIPO</a>
+                            <a class="nav-link" href="equipo.html">EQUIPO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./fundacion.html">FUNDACION</a>
+                            <a class="nav-link" href="fundacion.html">FUNDACION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./estadio.html">ESTADIO Y UNIFORME</a>
+                            <a class="nav-link" href="estadio.html">ESTADIO Y UNIFORME</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <img class="navbar__nba" src="/icons/navbar/nbalogonav.png" alt="">
+                    <img class="navbar__nba" src="../icons/navbar/nbalogonav.png" alt="">
                 </div>
             </nav>
     </header>
@@ -273,63 +273,86 @@
                 <h1 class="lideresHistoricos__h1">Líderes Históricos</h1>
             </section>
 
-            <section id="lideresHistoricos__content">
-                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
-                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
-                        <div class="bannerLideres-card__body bannerLideres__body">
-                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
-                            <h5 class="bannerLideres__titulo">Puntos</h5>
-                            <p class="bannerLideres-card__text bannerLideres__text">22.050</p>
-                        </div>
-                    </div>
-        
-                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
-                        <img src="../images/historia/thurmond.webp" class="bannerLideres-card__img" alt="...">
-                        <div class="bannerLideres-card__body bannerLideres__body">
-                            <h4 class="bannerLideres__titulo">Nate Thurmond</h4>
-                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Rebotes</h5>
-                            <p class="bannerLideres-card__text bannerLideres__text">12.771</p>
-                        </div>
-                    </div>
 
-                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
-                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
-                        <div class="bannerLideres-card__body bannerLideres__body">
-                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
-                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Asisencias</h5>
-                            <p class="bannerLideres-card__text bannerLideres__text">5.783</p>
-                        </div>
-                    </div>
-                </section>
+            <section id="lideres__cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/equipo/curry.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PUNTOS</h5>
+                    <p class="card-text">Stephen Curry: 22.050</p>
+                </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">W. Chamberlain: 17.783</li>
+                    <li class="list-group-item">Rick Barry: 16.447</li>
+                    <li class="list-group-item">Paul Arizin: 16.266</li>
+                    </ul>
+                </div>
 
-                <section id="lideresHistoricos__content">
-                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
-                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
-                        <div class="bannerLideres-card__body bannerLideres__body">
-                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
-                            <h5 class="bannerLideres__titulo">Robos</h5>
-                            <p class="bannerLideres-card__text bannerLideres__text">1.430</p>
-                        </div>
-                    </div>
-        
-                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
-                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
-                        <div class="bannerLideres-card__body bannerLideres__body">
-                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
-                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Partidos Jugados</h5>
-                            <p class="bannerLideres-card__text bannerLideres__text">893</p>
-                        </div>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/images/historia/thurmond.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">REBOTES</h5>
+                <p class="card-text">Nate Thurmond: 12.771</p>
+            </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">W. Chamberlain: 10.768</li>
+                <li class="list-group-item">Larry Smith: 6.440</li>
+                <li class="list-group-item">Clyde Lee: 6.416</li>
+                </ul>
+            </div>
 
-                    <div class="bannerLideres__content bannerLideres__cards" style="width: 18rem;">
-                        <img src="../images/equipo/curry.png" class="bannerLideres-card__img" alt="...">
-                        <div class="bannerLideres-card__body bannerLideres__body">
-                            <h4 class="bannerLideres__titulo">Stephen Curry</h4>
-                            <h5 class="bannerLideres-card__titulo bannerLideres__titulo">Triples</h5>
-                            <p class="bannerLideres-card__text bannerLideres__text">3.500</p>
-                        </div>
-                    </div>
-            </section>
+            <div class="card" style="width: 18rem;">
+                <img src="/images/equipo/curry.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ASISTENCIAS</h5>
+                <p class="card-text">Stephen Curry: 5.898</p>
+            </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Guy Rodgers: 4.855</li>
+                <li class="list-group-item">Draymond Green: 4.320</li>
+                <li class="list-group-item">Tim Hardaway: 3.926</li>
+                </ul>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/images/equipo/curry.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ROBOS</h5>
+                <p class="card-text">Stephen Curry: 1.447</p>
+            </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Chris Mullin: 1.360</li>
+                <li class="list-group-item">Draymond Green: 1.034</li>
+                <li class="list-group-item">Rick Barry: 929</li>
+                </ul>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/images/equipo/curry.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">PARTIDOS JUGADOS</h5>
+                <p class="card-text">Stephen Curry: 916</p>
+            </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Chris Mullin: 807</li>
+                <li class="list-group-item">Draymond Green: 773</li>
+                <li class="list-group-item">Nate Thurmond: 757</li>
+                </ul>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/images/equipo/curry.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TRIPLES</h5>
+                <p class="card-text">Stephen Curry: 3.545</p>
+            </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Klay Thompson: 2.326</li>
+                <li class="list-group-item">J. Richardson: 700</li>
+                <li class="list-group-item">Draymond Green: 629</li>
+                </ul>
+            </div>
+    </section>
 
         </main>
     
@@ -339,7 +362,7 @@
             </article>
     
             <article class="footerBanner__fan">
-                <a href="../pages/haztefan.html">Hazte Fan</a>
+                <a href="haztefan.html">Hazte Fan</a>
                 <i class="fa-solid fa-thumbs-up" style="color: #080808"></i>
             </article>
     

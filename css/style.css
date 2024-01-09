@@ -422,29 +422,43 @@ li, a {
   margin-bottom: 50px;
 }
 
-#lideresHistoricos__content {
+#lideres__cards {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 90px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-#lideresHistoricos__content .bannerLideres-card__img {
-  width: auto;
-  height: 200px;
-  margin-bottom: 20px;
+#lideres__cards .card {
+  background-color: black;
+  border-color: #e4c145;
+  border-style: solid;
+  border-width: 1px;
 }
-#lideresHistoricos__content .bannerLideres__titulo {
-  font-size: 35px;
+#lideres__cards .list-group-item {
+  background-color: black;
+  border-color: #e4c145;
+  border-style: solid;
+  border-width: 1px;
+}
+#lideres__cards .card-title {
   font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
   font-weight: bold;
+}
+#lideres__cards .card-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
   text-align: center;
   color: white;
 }
-#lideresHistoricos__content .bannerLideres__text {
-  font-size: 40px;
+#lideres__cards .list-group-item {
   font-family: "Barlow Condensed", sans-serif;
-  text-align: center;
-  color: #e4c145;
+  font-size: 20px;
+  color: white;
   font-weight: bold;
 }
 
