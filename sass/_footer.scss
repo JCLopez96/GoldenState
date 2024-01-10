@@ -19,13 +19,13 @@
     justify-content: space-between;
 
     .footerBanner-logo__img {
-        width: 120px;
-        height: 70px;
+        @include sizes(120px, 60px );
+        margin-left: 15px;
     }
-
+    
     .footerBanner__fan {
         @include sizes(200px , 50px);
-        background-color: #e4c145;
+        background-color: #e4c145;  
         font-family: 'Oswald', sans-serif;
         font-weight: bold;
         border-style: solid;
@@ -34,6 +34,10 @@
         text-align: center;
         align-items: center;
         padding: 10px;
+    }
+
+    .footerBanner__fan :hover {
+        text-decoration: underline;
     }
 
     .footerBanner__redes{

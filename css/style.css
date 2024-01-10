@@ -174,21 +174,21 @@ li, a {
   justify-content: space-between;
   margin: 30px;
   margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-#bannerPages .bannerPages__body {
+#bannerPages .card {
   background-color: #e4c145;
-  width: 270px;
   padding: 20px;
   border-color: black;
   border-style: solid;
-  margin-right: 5px;
-  margin-top: 0;
+  border-radius: 20px;
+  align-items: center;
 }
-#bannerPages .bannerPages__img {
-  width: 250px;
-  height: 320px;
-  margin: 8px;
-  margin-bottom: 0px;
+#bannerPages .card-img-top {
+  width: 260px;
+  height: 290px;
+  border-radius: 20px;
 }
 #bannerPages .bannerPages__titulo {
   font-family: "Oswald", sans-serif;
@@ -380,7 +380,8 @@ li, a {
 }
 #footerBanner .footerBanner-logo__img {
   width: 120px;
-  height: 70px;
+  height: 60px;
+  margin-left: 15px;
 }
 #footerBanner .footerBanner__fan {
   width: 200px;
@@ -394,6 +395,9 @@ li, a {
   text-align: center;
   align-items: center;
   padding: 10px;
+}
+#footerBanner .footerBanner__fan :hover {
+  text-decoration: underline;
 }
 #footerBanner .footerBanner__redes {
   display: flex;
@@ -462,19 +466,138 @@ li, a {
   font-weight: bold;
 }
 
-/*Pagina en desarrollo*/
-.bannerPaginanueva {
-  height: 445px;
-  background-color: black;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
+/*MIXINS FUNDACION*/
+/*FUNDACION*/
+#fundacion__banner {
+  align-items: center;
+}
+#fundacion__banner .fundacion__imagen {
+  width: 100%;
+  height: 400px;
+  opacity: 0.4;
+}
+#fundacion__banner .fundacion__titulo {
+  position: absolute;
+  top: 60%;
+  left: 28%;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
   color: white;
-  padding: 30px;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
 }
 
-.progress {
-  margin: 20px;
+#fundacion__text {
+  margin: 40px;
+}
+#fundacion__text .text__parteI {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+#fundacion__text .texte__parteII {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+#programas__banner .programas__title {
+  text-align: center;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/*MIXINS CARDS PROGRAMAS*/
+/*CARDS PROGRAMAS*/
+#card__programas {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 50px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+#card__programas .card-body {
+  background-color: #e4c145;
+}
+#card__programas .card-title {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+#card__programas .card-text {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/*CARRUSEL ESTADIO*/
+/*MIXINS FORMULARIO*/
+/*FORMULARIO DE FAN*/
+#banner__bienvenida .bannerBienvenida__title {
+  border-color: black;
+  border-style: solid;
+  background-color: #e4c145;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  margin: 0 400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#banner__bienvenida .bannerBienvenida__body {
+  margin: 40px;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+#formulario__fan {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+#formulario__fan .formulario__body {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+#formulario__fan .formulario__input {
+  font-size: 20px;
+}
+#formulario__fan .formulario__select {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+#formulario__fan .modal-title {
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+#formulario__fan .modal-body {
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+#formulario__fan .button__a {
+  color: white;
 }
 
 

@@ -1,0 +1,32 @@
+/*MIXINS CARDS PROGRAMAS*/
+
+@mixin card-desing {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/*CARDS PROGRAMAS*/
+
+#card__programas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    gap: 30px;
+    margin-bottom: 20px;
+
+    .card-body {
+        background-color: #e4c145;
+    }
+
+    .card-title {
+        @include card-desing;
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+    }
+
+    .card-text {
+        @include card-desing;
+        font-family:"Barlow Condensed", sans-serif;
+    }
+}
