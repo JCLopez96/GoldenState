@@ -1,0 +1,53 @@
+/*MIXINS FOOTER*/
+
+@mixin sizes ($width , $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-design {
+    display: flex;
+    align-items: center;
+}
+
+/*FOOTER*/
+
+#footerBanner {
+    @include sizes(auto , auto );
+    @include flex-design;
+    background-color: #1c389b;
+    justify-content: space-between;
+
+    .footerBanner-logo__img {
+        @include sizes(120px, 60px );
+        margin-left: 15px;
+    }
+    
+    .footerBanner__fan {
+        @include sizes(200px , 50px);
+        background-color: #e4c145;  
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+        border-radius: 100px;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footerBanner__fan :hover {
+        text-decoration: underline;
+    }
+
+    .footerBanner__redes{
+        @include flex-design;
+        margin-left: 20px;
+        color: white;
+        padding: 20px;
+    }
+
+    .fa-brands {
+        padding: 5px;
+    }
+}

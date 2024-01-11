@@ -1,0 +1,44 @@
+/*MIXINS NAVBAR*/
+@mixin navbarlogos{
+    width: auto;
+    height: 70px;
+    padding: 0 20px;
+}
+
+
+/*ESTILOS DEL HEADER Y DEL NAV*/
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .navbar {
+        background-color: #1c389b;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .navbar__Golden {
+        @include navbarlogos
+    }
+
+    .navbar__nba {
+        @include navbarlogos
+    }
+}
+
+#navbarNav {
+    .nav-link {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        flex-direction: row;
+        margin-left: 30px;
+    }
+
+    .nav-item :hover {
+    color:  #e4c145;
+    }
+}

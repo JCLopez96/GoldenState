@@ -1,22 +1,35 @@
 
-/*IMPORTS*/
-@import "fuentes";
-@import "reset";
-@import "config";
-@import "medias";
-@import "navbar";
-@import "index";
-@import "cardsindex";
-@import "historia";
-@import "acordiones";
-@import "footer";
-@import "cardshistoria";
-@import "tablaequipo";
-@import "fundacion";
-@import "cardsfundacion";
-@import "estadio";
-@import "carruselestadio";
-@import "haztefan";
+/*IMPORTS PRINCIPALES*/
+@import "resetconfig/fuentes";
+@import "resetconfig/reset";
+@import "resetconfig/config";
+@import "resetconfig/medias";
+@import "navbar/main-navbar";
+@import "footer/main-footer";
+
+/*IMPORTS INDEX*/
+@import "index/main-index";
+@import "index/cardsindex";
+
+/*IMPORTS HISTORIA*/
+@import "historia/main-historia";
+@import "historia/acordiones";
+@import "historia/cardshistoria";
+
+/*IMPORTS EQUIPO*/
+@import "equipo/tablaequipo";
+
+/*IMPORTS FUNDACION*/
+@import "fundacion/main-fundacion";
+@import "fundacion/cardsfundacion";
+
+
+/*IMPORTS ESTADIO*/
+@import "estadio/main-estadio";
+@import "estadio/uniformes";
+
+/*IMPORTS HAZTE FAN*/
+@import "haztefan/main-haztefan";
 
 
 /*# sourceMappingURL=style.css.map */

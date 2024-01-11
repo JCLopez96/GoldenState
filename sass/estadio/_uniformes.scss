@@ -1,0 +1,55 @@
+/*MIXINS UNIFORMES*/
+
+@mixin text-design {
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+@mixin boxes-style {
+    border-color: black;
+    border-style: solid;
+}
+
+/*BANNER UNIFORMES*/
+
+#uniformes__banner {
+    align-items: center;
+    .uniformes-banner__title {
+        text-align: center;
+        padding: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        color: black;
+        background-color: #e4c145;
+        @include boxes-style;
+        margin: 0 400px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .uniformes-banner__body {
+        @include text-design;
+        font-size: 30px;
+        margin: 25px;
+    }
+
+    .uniformes-banner__body2 {
+        @include text-design;
+        font-size: 30px;
+        margin: 25px;
+        margin-bottom: 0;
+    }
+
+    .uniforme__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uniformes-banner__img {
+        height: 500px;
+        width: 800px;
+    }
+}
+

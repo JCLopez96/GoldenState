@@ -1,0 +1,82 @@
+/*MIXINS ESTADIO*/
+
+@mixin boxes-style {
+    border-color: black;
+    border-style: solid;
+}
+
+@mixin sizes ($width , $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin text-design {
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+
+/*ESTADIO*/
+
+#estadio__banner {
+    .estadio-banner__title {
+        text-align: center;
+        padding: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        color: black;
+        background-color: #e4c145;
+        @include boxes-style;
+        margin: 0 400px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .estadio-banner__body {
+        @include text-design;
+        margin-bottom: 30px;
+        margin: 25px;
+        font-size: 30px;
+    }
+
+    .estadio-banner__video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+#estadio-parte2 {
+    .estadio-parte2__text {
+        @include text-design;
+        margin: 25px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+}
+
+#ubicacion__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    color: #e4c145;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    padding: 10px;
+    @include sizes( 900px, 300px );
+    
+    .ubicacion-banner__maps {
+    @include sizes(300px, 250px );
+    padding: 10px;
+    }
+
+    .ubicacion-banner__text {
+        @include text-design;
+        font-size: 20px;
+    }
+}
