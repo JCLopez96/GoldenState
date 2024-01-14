@@ -469,6 +469,58 @@ li, a {
 }
 
 /*IMPORTS EQUIPO*/
+/*MIXINS CARDS EQUIPO*/
+/*CARDS EQUIPO*/
+#banner-equipo .banner-equipo__title {
+  text-align: center;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #e4c145;
+  border-color: black;
+  border-style: solid;
+  margin: 0 400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#accordionFlushExample {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+#accordionFlushExample .accordion-item {
+  width: 300px;
+  align-items: center;
+  background-color: black;
+  border: solid;
+  border-color: #e4c145;
+}
+#accordionFlushExample .accordion__img {
+  width: 280px;
+  align-items: center;
+  background-color: black;
+}
+#accordionFlushExample .accordion-button {
+  background-color: black;
+}
+#accordionFlushExample .accordion-button__title {
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+#accordionFlushExample .accordion-body__text {
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
 /*IMPORTS FUNDACION*/
 /*MIXINS FUNDACION*/
 /*FUNDACION*/
@@ -651,6 +703,34 @@ li, a {
 #uniformes__banner .uniformes-banner__img {
   height: 500px;
   width: 800px;
+}
+
+/*MIXINS CARDS UNIFORME*/
+/*CARDS UNIFORMES*/
+#uniforme__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+#uniforme__cards .card {
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  border: solid;
+  border-color: #e4c145;
+}
+#uniforme__cards .uniforme-cards__img {
+  width: 200px;
+  height: 200px;
+}
+#uniforme__cards .uniforme-cards__p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
 }
 
 /*IMPORTS HAZTE FAN*/

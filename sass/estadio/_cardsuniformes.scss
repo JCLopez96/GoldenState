@@ -1,0 +1,42 @@
+/*MIXINS CARDS UNIFORME*/
+@mixin cards-design {
+    background-color: black;
+    border-color: #e4c145;
+    border-style: solid;
+    border-width: 1px;
+}
+
+@mixin cards-body {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/*CARDS UNIFORMES*/
+
+#uniforme__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    .card {
+        align-items: center;
+        padding: 10px;
+        background-color: black;
+        border: solid;
+        border-color: #e4c145;
+
+    }
+    .uniforme-cards__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .uniforme-cards__p {
+        @include cards-body;
+    }
+}

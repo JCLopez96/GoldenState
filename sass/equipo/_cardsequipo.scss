@@ -1,0 +1,65 @@
+/*MIXINS CARDS EQUIPO*/
+
+@mixin boxes-style {
+    border-color: black;
+    border-style: solid;
+}
+
+@mixin text-design {
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+/*CARDS EQUIPO*/
+#banner-equipo {
+    .banner-equipo__title {
+        text-align: center;
+        padding: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        color: black;
+        background-color: #e4c145;
+        @include boxes-style;
+        margin: 0 400px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+#accordionFlushExample {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    .accordion-item {
+        width: 300px;
+        align-items: center;
+        background-color: black;
+        border: solid;
+        border-color: #e4c145;
+    }
+
+    .accordion__img {
+        width: 280px;
+        align-items: center;
+        background-color: black;
+    }
+
+    .accordion-button {
+        background-color: black;
+    }
+
+    .accordion-button__title {
+        @include text-design;
+        font-size: 30px
+    }
+
+    .accordion-body__text {
+        @include text-design;
+        font-size: 20px;
+    }
+}
