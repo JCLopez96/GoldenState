@@ -1,0 +1,20 @@
+/*MIXINS MEDIA QUERIES*/
+@mixin sizes ($width , $height) {
+    width: $width;
+    height: $height;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 480px) {
+    .card-img-top {
+        @include sizes( 230px , 240px);
+    }
+
+}
+
+
+
+
+
+

@@ -1,9 +1,8 @@
 
 /*IMPORTS PRINCIPALES*/
-@import "resetconfig/fuentes";
-@import "resetconfig/reset";
-@import "resetconfig/config";
-@import "resetconfig/medias";
+@import "fuentes";
+@import "reset";
+@import "config";
 @import "navbar/main-navbar";
 @import "footer/main-footer";
 
@@ -31,6 +30,8 @@
 
 /*IMPORTS HAZTE FAN*/
 @import "haztefan/main-haztefan";
+
+@import "medias";
 
 
 /*# sourceMappingURL=style.css.map */
