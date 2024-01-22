@@ -2117,23 +2117,29 @@ li, a {
   #bannerInseason {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 50px;
     margin: 10px;
-    width: 300px;
-    height: 400px;
+    margin-left: 40px;
+    width: 260px;
+    height: 550px;
   }
   #bannerInseason .bannerInseason__title {
     font-size: 20px;
+    margin-top: 20px;
   }
   #bannerInseason .bannerInseason__text {
-    font-size: 15px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
   }
   #bannerInseason .bannerInseason__body {
-    padding: 0px;
+    padding: 10px;
   }
   #bannerInseason .bannerInseason__logo {
-    width: 295px;
-    height: 200px;
+    width: 240px;
+    height: 180px;
     border: none;
   }
   #bannerInseason .bannerInseaon-grupos__img {
@@ -2145,11 +2151,13 @@ li, a {
     align-items: center;
     margin-top: 50px;
     margin: 10px;
-    width: 300px;
-    height: 500px;
+    margin-left: 40px;
+    padding: 10px;
+    width: 260px;
+    height: 600px;
   }
   #bannerAllstar .bannerAllstar-logo__img {
-    width: 295px;
+    width: 235px;
     height: 200px;
   }
   #bannerAllstar .bannerAllstar__title {
