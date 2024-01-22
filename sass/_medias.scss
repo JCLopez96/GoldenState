@@ -1231,10 +1231,12 @@
 
     #bannerInseason {
         display: flex;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
         margin-top: 50px;
         margin: 10px;
-        @include sizes( 460px, 400px );
+        margin-left: 50px;
+        @include sizes( 400px , 430px );
     
         .bannerInseason__title {
             font-size: 20px;
@@ -1249,11 +1251,11 @@
         }
     
         .bannerInseason__body {
-            padding: 0px;
+            padding: 10px;
         }
     
-        .bannerInseason__logo {
-            @include sizes( 455px , 200px );
+        .bannerInseason__logo{
+            @include sizes( 370px , 200px );
             border: none;
         }
     
@@ -1267,9 +1269,11 @@
         align-content: center;
         margin-top: 50px;
         margin: 10px;
-        @include sizes( 460px, 400px );
+        margin-left: 50px;
+        @include sizes( 400px, 430px );
         .bannerAllstar-logo__img {
-            @include sizes( 455px , 200px );
+            @include sizes( 390px , 200px );
+            padding: 10px;
         }
     
         .bannerAllstar__title {
