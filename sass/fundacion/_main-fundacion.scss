@@ -35,13 +35,9 @@
 
 #fundacion__text {
     margin: 40px;
-    .text__parteI {
+    .fundacion-body__text {
         @include text-design;
-        margin-bottom: 30px
-    }
-
-    .texte__parteII {
-        @include text-design;
+        margin-bottom: 30px;
     }
 }
 

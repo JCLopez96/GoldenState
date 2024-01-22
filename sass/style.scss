@@ -1,11 +1,4 @@
 
-/*IMPORTS PRINCIPALES*/
-@import "fuentes";
-@import "reset";
-@import "config";
-@import "navbar/main-navbar";
-@import "footer/main-footer";
-
 /*IMPORTS INDEX*/
 @import "index/main-index";
 @import "index/cardsindex";
@@ -31,6 +24,12 @@
 /*IMPORTS HAZTE FAN*/
 @import "haztefan/main-haztefan";
 
+/*IMPORTS PRINCIPALES*/
+@import "fuentes";
+@import "reset";
+@import "config";
+@import "navbar/main-navbar";
+@import "footer/main-footer";
 @import "medias";
 
 

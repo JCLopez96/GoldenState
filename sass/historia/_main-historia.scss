@@ -1,5 +1,12 @@
 /*MIXIN HISTORIA*/
 
+@mixin text-design {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
 @mixin flex-design {
     display: inline-block;
     align-items: center;
@@ -16,12 +23,6 @@
     border-style: solid;
 }
 
-@mixin text-design {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
 
 /*ESTILO HISTORIA*/
 
@@ -42,8 +43,8 @@
     }
 
     .historiaLogos__p {
-        margin: 40px;
         @include text-design;
+        margin-bottom: 30px
     }
 }
 

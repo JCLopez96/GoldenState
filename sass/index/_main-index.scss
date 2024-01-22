@@ -107,19 +107,22 @@
 }
 
   /*INDEX CALENDARIO*/
-#carouselExampleIndicators {
-    .carousel-inner {
-      width: 900px;
-      padding: 20px;
-      margin-left: 14%;
-      margin-bottom: 40px;
-  }
-
+#carouselCalendario { 
     .carouselCalendario__title {
       text-align: center;
       font-family: 'Oswald', sans-serif;
       font-size: 40px;
       font-weight: bold ;
       color: #e4c145;
+  }
+  }
+
+
+#carouselExampleIndicators {
+    .carousel-inner {
+      width: 900px;
+      padding: 20px;
+      margin-left: 14%;
+      margin-bottom: 40px;
   }
 }  
