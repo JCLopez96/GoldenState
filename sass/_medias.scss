@@ -44,1484 +44,1219 @@
 /*MEDIA QUERIES*/
 
 /*MEDIA DE 1200 PX*/
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width:769px) {
     
-/*FOOTER*/
-    #footerBanner {
-        align-content: center;
-        .footerBanner__redes {
-            flex-wrap: wrap;
+    /*FOOTER*/
+        #footerBanner {
             align-content: center;
-            padding: 5px;
+            .footerBanner__redes {
+                flex-wrap: wrap;
+                align-content: center;
+                padding: 5px;
+                margin: 0px;
+            }
+    
+            .fa-brands {
+                padding: 5px;
+            }
+    
+            .footerBanner-logo__img {
+                margin: 0px;
+                @include sizes(140px , 80px );
+                padding: 8px;
+            }
+    
+            .footerBanner__fan {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sizes( 180px , 60px );
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    
+    /*INDEX*/
+        #imagenPortada {
+            .goldenIndex {
+                height: 500px;
+            }
+        
+            .goldenIndex__video {
+                @include sizes( 100% , 500px )
+            }
+        }
+    
+        #bannerPages {
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+        
+            .card {
+                @include sizes( 300px , 450px);
+                padding: 10px;
+            }
+        
+            .card-body {
+                padding: 10px;
+            }   
+        
+            .card-img-top {
+                @include sizes( 260px, 250px )
+            }
+        
+            .bannerPages__titulo {
+                font-size: 25px;
+            }
+        
+            .bannerPages__text {
+                font-size: 20px;
+            }
+        
+            .btn-primary {
+                font-size: 20px;
+            }
+        }
+    
+    
+        #carouselCalendario{
+            .carouselCalendario__title {
+                font-size: 30px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+        }
+    
+
+    /*PAGINA HISTORIA*/
+        #historiaLogos {
+            .historiaLogos__h1 {
+                @include h1_1200px;
+            }
+    
+            .historiaLogos__p {
+                font-size: 25px;
+                margin: 15px;
+            }
+        }
+    
+        #historiaImagenes {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            @include sizes( auto , auto );
+    
+            .historia-img__banner {
+                @include sizes( 400px , 200px );
+            }
+        }   
+    
+        #acordionLogos {
+            margin: 20px;
+            .accordionTitle {
+                @include h1_1200px;
+            }
+    
+            .accordion-body {
+                @include acordiones;
+            }
+    
+            .accordion-button {
+                font-size: 25px;
+            }
+    
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+    
+            .accordionLogo__explicacion {
+                font-size: 20px;
+                padding: 5px;
+            } 
+        }
+    
+        #historiaActualidad {
+            .historiaActualidad__h1 {
+                @include h1_1200px;
+            }
+    
+            .historiaActualidad__p {
+                font-size: 25px;
+                margin: 15px;
+            }
+        }
+    
+        #acordionCampeonatos {
+            margin: 20px;
+            .accordionCampeonato__title {
+                @include h1_1200px;
+            }
+    
+            .accordion-button {
+                font-size: 25px;
+            }
+    
+            .accordion-body {
+                @include acordiones;
+            }
+    
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+    
+            .accordionCampeonato__explicacion {
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
+    
+        #lideresHistoricos {
+            .lideresHistoricos__h1 {
+                @include h1_1200px;
+            }
+    }
+    
+        #lideres__cards {
+            .card-title {
+                font-size: 25px;
+            }
+    
+            .card-text {
+                font-size: 25px;
+            }
+    
+            .list-group-item {
+                font-size: 25px;
+            }
+    }
+    
+    /*PAGINA EQUIPO*/
+        #banner-equipo {
+            .banner-equipo__title {
+                @include h1_1200px;
+            }
+        }
+    
+    /*PAGINA FUNDACION*/
+        #fundacion__banner {
+            .fundacion-banner__img {
+                height: 350px;
+            }
+    
+            .fundacion-banner__title {
+                font-size: 40px;
+                margin-top: 120px;
+            }
+        }
+    
+        #fundacion__text {
             margin: 0px;
+            .fundacion-body__text {
+                font-size: 25px;
+                margin: 15px;
+            }
         }
-
-        .fa-brands {
-            padding: 5px;
+    
+        #programas__banner {
+            .programas__title {
+                @include h1_1200px;
+            }
         }
-
-        .footerBanner-logo__img {
-            margin: 0px;
-            @include sizes(140px , 80px );
-            padding: 8px;
-        }
-
-        .footerBanner__fan {
+    
+        #card__programas {
             display: flex;
             align-items: center;
             justify-content: center;
-            @include sizes( 180px , 60px );
-            font-size: 20px;
+            flex-wrap: wrap;
             padding: 10px;
-        }
-    }
-
-/*INDEX*/
-    #imagenPortada {
-        .goldenIndex {
-            height: 500px;
+            .card-body {
+                font-size: 15px;
+            }
+    
+            .card-title {
+                font-size: 20px;
+            }
         }
     
-        .goldenIndex__video {
-            @include sizes( 100% , 500px )
-        }
-    }
-
-    #bannerPages {
-        justify-content: center;
-        margin-top: 40px;
-        gap: 20px;
+    /*PAGINA ESTADIO*/
+        #estadio__banner {
+            .estadio-banner__title {
+                @include h1_1200px;
+            }
     
-        .card {
-            @include sizes( 300px , 450px);
-            padding: 10px;
+            .estadio-banner__body {
+                font-size: 25px;
+                margin: 15px;
+            }
+    
+            .estadio-video {
+                @include sizes( 700px , 400px )
+            }
         }
     
-        .card-body {
-            padding: 10px;
+        #estadio-parte2 {
+            .estadio-parte2__text {
+                font-size: 25px;
+                margin: 15px;
+            }
         }   
     
-        .card-img-top {
-            @include sizes( 260px, 250px )
-        }
-    
-        .bannerPages__titulo {
-            font-size: 25px;
-        }
-    
-        .bannerPages__text {
-            font-size: 20px;
-        }
-    
-        .btn-primary {
-            font-size: 20px;
-        }
-    }
-
-    #bannerInseason {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 20px;
-        margin-top: 100px;
-        border-style: solid;
-        border-color: #e4c145;
+        // #ubicacion__banner {
+        //     margin-left: 150px;
+        //     margin-bottom: 40px;
+        //     padding: 10px;
+        //     @include sizes( 900px, 300px );
+            
+        //     .ubicacion-banner__maps {
+        //         @include sizes(300px, 250px );
+        //         padding: 10px;
+        //     }
         
-        .bannerInseason__body{
-            display: inline-block;
-            align-items: center;
-            justify-content: center;
-            padding: 0 50px;
-        }
-        
-        .bannerInseason__logo {
-            @include sizes(760px , 200px );
-            align-items: center;
-            border-color: #e4c145;
-            border-style: solid;
-        }
-        
-        .bannerInseason__title{
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            color: white;
-            margin-top: 10px;
-            padding: 10px;
-        }
-        
-        .bannerInseason__text {
-            font-family:"Barlow Condensed", sans-serif;
-            font-size: 20px;
-            text-align: center;
-            color: white;
-            margin-bottom: 15px;
-        }
-        
-        .bannerInseaon-grupos__img {
-            @include sizes(280px , 450px);
-        }
-    }
-
-    #bannerAllstar {
-        margin: 20px;
-        margin-top: 60px;
-        margin-bottom: 50px;
-        border-style: solid;
-        border-color: #e4c145;
-        display: flex;
-        align-items: center;
+        //     .ubicacion-banner__text {
+        //         font-size: 20px;
+        //     }
+        // }
     
-        .bannerAllstar__title {
-            text-align: center;
-            font-family: 'Oswald', sans-serif;
-            font-size: 25px;
-            color: white;
+        #uniformes__banner {
+            .uniformes-banner__title {
+                @include h1_1200px;
+            }
+    
+            .uniformes-banner__body {
+                font-size: 25px;
+                margin: 15px;
+            }
+    
+            .uniformes-banner__body2 {
+                font-size: 25px;
+                margin: 15px;
+            }
         }
     
-        .bannerAllstar__text{
-            text-align: center;
-            margin: 20px;
-            font-family: "Barlow Condensed", sans-serif;
-            font-size: 20px;
-            color: white;
-        }
+    /*PAGINA HAZTE FAN*/
+        #banner__bienvenida {
+            .bannerBienvenida__title {
+                @include h1_1200px;
+            }
     
-        .bannerAllstar-logo__img{
-        @include sizes(500px , 450px);
+            .bannerBienvenida__body {
+                font-size: 25px;
+            }
         }
     }
-
-    #carouselCalendario{
-        .carouselCalendario__title {
-            font-size: 30px;
-            margin-bottom: 15px;
-            margin-top: 20px;
-        }
-    }
-
-    #carouselExampleIndicators {
-        .carousel-inner {
-            width: 900px;
-            padding: 0px;
-        }
-    }
-
-/*PAGINA HISTORIA*/
-    #historiaLogos {
-        .historiaLogos__h1 {
-            @include h1_1200px;
-        }
-
-        .historiaLogos__p {
-            font-size: 25px;
-            margin: 15px;
-        }
-    }
-
-    #historiaImagenes {
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        @include sizes( auto , auto );
-
-        .historia-img__banner {
-            @include sizes( 400px , 200px );
-        }
-    }   
-
-    #acordionLogos {
-        margin: 20px;
-        .accordionTitle {
-            @include h1_1200px;
-        }
-
-        .accordion-body {
-            @include acordiones;
-        }
-
-        .accordion-button {
-            font-size: 25px;
-        }
-
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-
-        .accordionLogo__explicacion {
-            font-size: 20px;
-            padding: 5px;
-        } 
-    }
-
-    #historiaActualidad {
-        .historiaActualidad__h1 {
-            @include h1_1200px;
-        }
-
-        .historiaActualidad__p {
-            font-size: 25px;
-            margin: 15px;
-        }
-    }
-
-    #acordionCampeonatos {
-        margin: 20px;
-        .accordionCampeonato__title {
-            @include h1_1200px;
-        }
-
-        .accordion-button {
-            font-size: 25px;
-        }
-
-        .accordion-body {
-            @include acordiones;
-        }
-
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-
-        .accordionCampeonato__explicacion {
-            font-size: 20px;
-            padding: 5px;
-        }
-    }
-
-    #lideresHistoricos {
-        .lideresHistoricos__h1 {
-            @include h1_1200px;
-        }
-}
-
-    #lideres__cards {
-        .card-title {
-            font-size: 25px;
-        }
-
-        .card-text {
-            font-size: 25px;
-        }
-
-        .list-group-item {
-            font-size: 25px;
-        }
-}
-
-/*PAGINA EQUIPO*/
-    #banner-equipo {
-        .banner-equipo__title {
-            @include h1_1200px;
-        }
-    }
-
-/*PAGINA FUNDACION*/
-    #fundacion__banner {
-        .fundacion-banner__img {
-            height: 350px;
-        }
-
-        .fundacion-banner__title {
-            font-size: 40px;
-            margin-top: 120px;
-        }
-    }
-
-    #fundacion__text {
-        margin: 0px;
-        .fundacion-body__text {
-            font-size: 25px;
-            margin: 15px;
-        }
-    }
-
-    #programas__banner {
-        .programas__title {
-            @include h1_1200px;
-        }
-    }
-
-    #card__programas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 10px;
-        .card-body {
-            font-size: 15px;
-        }
-
-        .card-title {
-            font-size: 20px;
-        }
-    }
-
-/*PAGINA ESTADIO*/
-    #estadio__banner {
-        .estadio-banner__title {
-            @include h1_1200px;
-        }
-
-        .estadio-banner__body {
-            font-size: 25px;
-            margin: 15px;
-        }
-
-        .estadio-video {
-            @include sizes( 700px , 400px )
-        }
-    }
-
-    #estadio-parte2 {
-        .estadio-parte2__text {
-            font-size: 25px;
-            margin: 15px;
-        }
-    }   
-
-    #ubicacion__banner {
-        margin-left: 150px;
-        margin-bottom: 40px;
-        padding: 10px;
-        @include sizes( 900px, 300px );
-        
-        .ubicacion-banner__maps {
-            @include sizes(300px, 250px );
-            padding: 10px;
-        }
-    
-        .ubicacion-banner__text {
-            font-size: 20px;
-        }
-    }
-
-    #uniformes__banner {
-        .uniformes-banner__title {
-            @include h1_1200px;
-        }
-
-        .uniformes-banner__body {
-            font-size: 25px;
-            margin: 15px;
-        }
-
-        .uniformes-banner__body2 {
-            font-size: 25px;
-            margin: 15px;
-        }
-    }
-
-/*PAGINA HAZTE FAN*/
-    #banner__bienvenida {
-        .bannerBienvenida__title {
-            @include h1_1200px;
-        }
-
-        .bannerBienvenida__body {
-            font-size: 25px;
-        }
-    }
-}
 
 /*MEDIA DE 768 PX*/
-@media (min-width: 601px) and (max-width: 768px) {
-/*FOOTER*/
-    #footerBanner {
-        align-content: center;
-        .footerBanner__redes {
-            flex-wrap: wrap;
+@media (max-width: 768px) and (min-width:601px) {
+    /*FOOTER*/
+        #footerBanner {
             align-content: center;
-            padding: 5px;
+            .footerBanner__redes {
+                flex-wrap: wrap;
+                align-content: center;
+                padding: 5px;
+                margin: 0px;
+            }
+    
+            .fa-brands {
+                padding: 5px;
+            }
+    
+            .footerBanner-logo__img {
+                margin: 0px;
+                @include sizes(120px , 80px );
+                padding: 8px;
+            }
+    
+            .footerBanner__fan {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sizes( 140px , 50px );
+                font-size: 15px;
+                padding: 10px;
+            }
+        }
+    
+    /*INDEX*/
+        #imagenPortada {
+            .goldenIndex {
+                height: 300px;
+            }
+        
+            .goldenIndex__video {
+                @include sizes( 100% , 300px )
+            }
+        }
+    
+        #bannerPages {
+            justify-content: center;
+            margin-top: 40px;
+            gap: 30px;
+        
+            .card {
+                @include sizes( 300px , 450px);
+                padding: 10px;
+            }
+        
+            .card-body {
+                padding: 10px;
+            }
+        
+            .card-img-top {
+                @include sizes( 260px, 250px )
+            }
+        
+            .bannerPages__titulo {
+                font-size: 25px;
+            }
+        
+            .bannerPages__text {
+                font-size: 20px;
+            }
+        
+            .btn-primary {
+                font-size: 20px;
+            }
+        }
+    
+        #carouselCalendario{
+            .carouselCalendario__title {
+                font-size: 20px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+        }
+    
+    /*PAGINA HISTORIA*/
+        #historiaLogos {
+            .historiaLogos__h1 {
+                @include h1_768px;
+            }
+    
+            .historiaLogos__p {
+                font-size: 20px;
+                margin: 15px;
+            }
+        }
+    
+        #historiaImagenes {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            @include sizes( auto , auto );
+    
+            .historia-img__banner {
+                @include sizes( 300px , 200px );
+            }
+        }   
+    
+        #acordionLogos {
+            margin: 20px;
+            .accordionTitle {
+                @include h1_768px;
+            }
+    
+            .accordion-body {
+                @include acordiones;
+            }
+    
+            .accordion-button {
+                font-size: 20px;
+            }
+    
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+    
+            .accordionLogo__explicacion {
+                font-size: 20px;
+                padding: 5px;
+            } 
+        }
+    
+        #historiaActualidad {
+            .historiaActualidad__h1 {
+                @include h1_768px;
+            }
+    
+            .historiaActualidad__p {
+                font-size: 20px;
+                margin: 15px;
+            }
+        }
+    
+        #acordionCampeonatos {
+            margin: 20px;
+            .accordionCampeonato__title {
+                @include h1_768px;
+            }
+    
+            .accordion-button {
+                font-size: 20px;
+            }
+    
+            .accordion-body {
+                @include acordiones;
+            }
+    
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+    
+            .accordionCampeonato__explicacion {
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
+    
+        #lideresHistoricos {
+            .lideresHistoricos__h1 {
+                @include h1_768px;
+            }
+        }
+    
+        #lideres__cards {
+            .card-title {
+                font-size: 20px;
+            }
+    
+            .card-text {
+                font-size: 20px;
+            }
+    
+            .list-group-item {
+                font-size: 20px;
+            }
+        }
+    
+    /*PAGINA EQUIPO*/
+        #banner-equipo {
+            .banner-equipo__title {
+                @include h1_768px;
+            }
+        }
+    
+    /*PAGINA FUNDACION*/
+        #fundacion__banner {
+            .fundacion-banner__img {
+                height: 250px;
+            }
+    
+            .fundacion-banner__title {
+                font-size: 30px;
+                margin-top: 80px;
+            }
+        }
+    
+        #fundacion__text {
             margin: 0px;
+            .fundacion-body__text {
+                font-size: 20px;
+                margin: 15px;
+            }
         }
-
-        .fa-brands {
-            padding: 5px;
+    
+        #programas__banner {
+            .programas__title {
+                @include h1_768px;
+            }
         }
-
-        .footerBanner-logo__img {
-            margin: 0px;
-            @include sizes(120px , 80px );
-            padding: 8px;
-        }
-
-        .footerBanner__fan {
+    
+        #card__programas {
             display: flex;
             align-items: center;
             justify-content: center;
-            @include sizes( 140px , 50px );
-            font-size: 15px;
-            padding: 10px;
-        }
-    }
-
-/*INDEX*/
-    #imagenPortada {
-        .goldenIndex {
-            height: 300px;
+            .card-body {
+                font-size: 20px;
+            }
+    
+            .card-title {
+                font-size: 25px;
+            }
         }
     
-        .goldenIndex__video {
-            @include sizes( 100% , 300px )
-        }
-    }
-
-    #bannerPages {
-        justify-content: center;
-        margin-top: 40px;
-        gap: 30px;
+    /*PAGINA ESTADIO*/
+        #estadio__banner {
+            .estadio-banner__title {
+                @include h1_768px;
+            }
     
-        .card {
-            @include sizes( 300px , 450px);
-            padding: 10px;
-        }
+            .estadio-banner__body {
+                font-size: 20px;
+                margin: 15px;
+            }
     
-        .card-body {
-            padding: 10px;
+            .estadio-video {
+                @include sizes( 700px , 300px )
+            }
         }
     
-        .card-img-top {
-            @include sizes( 260px, 250px )
-        }
-    
-        .bannerPages__titulo {
-            font-size: 25px;
-        }
-    
-        .bannerPages__text {
-            font-size: 20px;
-        }
-    
-        .btn-primary {
-            font-size: 20px;
-        }
-    }
-
-    #bannerInseason {
-        display: inline-block;
-        align-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        @include sizes( 745px, 400px );
-    
-        .bannerInseason__title {
-            font-size: 25px;
-            margin-top: 20px;
-        }
-    
-        .bannerInseason__text {
-            font-size: 20px;
-            margin: 10px;
-            margin-top: 0px;
-            padding: 10px;
-        }
-    
-        .bannerInseason__body {
-            padding: 0px;
-        }
-    
-        .bannerInseason__logo {
-            @include sizes( 740px , 200px );
-            border: none;
-        }
-    
-        .bannerInseaon-grupos__img {
-            @include sizes( 0px , 0px )
+        #estadio-parte2 {
+            .estadio-parte2__text {
+                font-size: 20px;
+                margin: 15px;
+            }
         }   
-    }
-
-    #bannerAllstar {
-        display: inline-block;
-        align-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        @include sizes( 745px, 420px );
-        .bannerAllstar-logo__img {
-            @include sizes( 740px , 200px );
+    
+        // #ubicacion__banner {
+        //     display: flex;
+        //     margin: 10px;
+        //     @include sizes( 750px , 250px );
+    
+        //     .ubicacion-banner__maps {
+        //         @include sizes(270px , 200px )
+        //     }
+    
+        //     .ubicacion-banner__text {
+        //         font-size: 15px;
+        //     }
+        // }
+    
+        #uniformes__banner {
+            .uniformes-banner__title {
+                @include h1_768px;
+            }
+    
+            .uniformes-banner__body {
+                font-size: 20px;
+                margin: 15px;
+            }
+    
+            .uniformes-banner__body2 {
+                font-size: 20px;
+                margin: 15px;
+            }
         }
     
-        .bannerAllstar__title {
-            margin-top: 10px;
-            font-size: 25px;
+    /*PAGINA HAZTE FAN*/
+        #banner__bienvenida {
+            .bannerBienvenida__title {
+                @include h1_768px;
+            }
+    
+            .bannerBienvenida__body {
+                font-size: 20px;
+            }
         }
     
-        .bannerAllstar__text {
-            font-size: 20px;
-            margin: 10px;
+        #formulario__fan {
+            .formulario__body {
+                font-size: 20px;
+            }
         }
     }
-
-    #carouselCalendario{
-        .carouselCalendario__title {
-            font-size: 20px;
-            margin-bottom: 15px;
-            margin-top: 20px;
-        }
-    }
-
-    #carouselExampleIndicators {
-        .carousel-inner {
-            width: 550px;
-            padding: 0px;
-        }
-    }
-
-/*PAGINA HISTORIA*/
-    #historiaLogos {
-        .historiaLogos__h1 {
-            @include h1_768px;
-        }
-
-        .historiaLogos__p {
-            font-size: 20px;
-            margin: 15px;
-        }
-    }
-
-    #historiaImagenes {
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        @include sizes( auto , auto );
-
-        .historia-img__banner {
-            @include sizes( 300px , 200px );
-        }
-    }   
-
-    #acordionLogos {
-        margin: 20px;
-        .accordionTitle {
-            @include h1_768px;
-        }
-
-        .accordion-body {
-            @include acordiones;
-        }
-
-        .accordion-button {
-            font-size: 20px;
-        }
-
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-
-        .accordionLogo__explicacion {
-            font-size: 20px;
-            padding: 5px;
-        } 
-    }
-
-    #historiaActualidad {
-        .historiaActualidad__h1 {
-            @include h1_768px;
-        }
-
-        .historiaActualidad__p {
-            font-size: 20px;
-            margin: 15px;
-        }
-    }
-
-    #acordionCampeonatos {
-        margin: 20px;
-        .accordionCampeonato__title {
-            @include h1_768px;
-        }
-
-        .accordion-button {
-            font-size: 20px;
-        }
-
-        .accordion-body {
-            @include acordiones;
-        }
-
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-
-        .accordionCampeonato__explicacion {
-            font-size: 20px;
-            padding: 5px;
-        }
-    }
-
-    #lideresHistoricos {
-        .lideresHistoricos__h1 {
-            @include h1_768px;
-        }
-    }
-
-    #lideres__cards {
-        .card-title {
-            font-size: 20px;
-        }
-
-        .card-text {
-            font-size: 20px;
-        }
-
-        .list-group-item {
-            font-size: 20px;
-        }
-    }
-
-/*PAGINA EQUIPO*/
-    #banner-equipo {
-        .banner-equipo__title {
-            @include h1_768px;
-        }
-    }
-
-/*PAGINA FUNDACION*/
-    #fundacion__banner {
-        .fundacion-banner__img {
-            height: 250px;
-        }
-
-        .fundacion-banner__title {
-            font-size: 30px;
-            margin-top: 80px;
-        }
-    }
-
-    #fundacion__text {
-        margin: 0px;
-        .fundacion-body__text {
-            font-size: 20px;
-            margin: 15px;
-        }
-    }
-
-    #programas__banner {
-        .programas__title {
-            @include h1_768px;
-        }
-    }
-
-    #card__programas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .card-body {
-            font-size: 20px;
-        }
-
-        .card-title {
-            font-size: 25px;
-        }
-    }
-
-/*PAGINA ESTADIO*/
-    #estadio__banner {
-        .estadio-banner__title {
-            @include h1_768px;
-        }
-
-        .estadio-banner__body {
-            font-size: 20px;
-            margin: 15px;
-        }
-
-        .estadio-video {
-            @include sizes( 700px , 300px )
-        }
-    }
-
-    #estadio-parte2 {
-        .estadio-parte2__text {
-            font-size: 20px;
-            margin: 15px;
-        }
-    }   
-
-    #ubicacion__banner {
-        display: flex;
-        margin: 10px;
-        @include sizes( 750px , 250px );
-
-        .ubicacion-banner__maps {
-            @include sizes(270px , 200px )
-        }
-
-        .ubicacion-banner__text {
-            font-size: 15px;
-        }
-    }
-
-    #uniformes__banner {
-        .uniformes-banner__title {
-            @include h1_768px;
-        }
-
-        .uniformes-banner__body {
-            font-size: 20px;
-            margin: 15px;
-        }
-
-        .uniformes-banner__body2 {
-            font-size: 20px;
-            margin: 15px;
-        }
-    }
-
-/*PAGINA HAZTE FAN*/
-    #banner__bienvenida {
-        .bannerBienvenida__title {
-            @include h1_768px;
-        }
-
-        .bannerBienvenida__body {
-            font-size: 20px;
-        }
-    }
-
-    #formulario__fan {
-        .formulario__body {
-            font-size: 20px;
-        }
-    }
-}
 
 /*MEDIA DE 600 PX*/
-@media (min-width: 481px) and (max-width: 600px) {
+@media (max-width: 600px) and (min-width:481px) {
 
-/*FOOTER*/
-    #footerBanner {
-        align-content: center;
-        .footerBanner__redes {
-            flex-wrap: wrap;
+    /*FOOTER*/
+        #footerBanner {
             align-content: center;
-            padding: 5px;
-            margin: 0px;
+            .footerBanner__redes {
+                flex-wrap: wrap;
+                align-content: center;
+                padding: 5px;
+                margin: 0px;
+            }
+        
+            .fa-brands {
+                padding: 3px;
+            }
+        
+            .footerBanner-logo__img {
+                margin: 0px;
+                @include sizes(90px , 50px );
+                padding: 8px;
+            }
+        
+            .footerBanner__fan {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sizes( 100px , 30px );
+                font-size: 10px;
+                padding: 5px;
+            }
         }
-    
-        .fa-brands {
-            padding: 3px;
+        
+    /*INDEX*/
+        #imagenPortada {
+            .goldenIndex {
+                height: 300px;
+            }
+            
+            .goldenIndex__video {
+                @include sizes( 100% , 300px )
+            }
         }
-    
-        .footerBanner-logo__img {
-            margin: 0px;
-            @include sizes(90px , 50px );
-            padding: 8px;
-        }
-    
-        .footerBanner__fan {
-            display: flex;
-            align-items: center;
+        
+        #bannerPages {
             justify-content: center;
-            @include sizes( 100px , 30px );
-            font-size: 10px;
-            padding: 5px;
-        }
-    }
-    
-/*INDEX*/
-    #imagenPortada {
-        .goldenIndex {
-            height: 300px;
-        }
-        
-        .goldenIndex__video {
-            @include sizes( 100% , 300px )
-        }
-    }
-    
-    #bannerPages {
-        justify-content: center;
-        margin-top: 40px;
-        
-        .card {
-            @include sizes( 300px , 370px);
-            padding: 10px;
-        }
-        
-        .card-body {
-            padding: 10px;
+            margin-top: 40px;
+            
+            .card {
+                @include sizes( 300px , 370px);
+                padding: 10px;
+            }
+            
+            .card-body {
+                padding: 10px;
+            }
+            
+            .card-img-top {
+                @include sizes( 260px, 200px )
+            }
+            
+            .bannerPages__titulo {
+                font-size: 20px;
+            }
+            
+            .bannerPages__text {
+                font-size: 15px;
+            }
+            
+            .btn-primary {
+                font-size: 15px;
+            }
         }
         
-        .card-img-top {
-            @include sizes( 260px, 200px )
+        #carouselCalendario{
+            .carouselCalendario__title {
+                font-size: 20px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
         }
         
-        .bannerPages__titulo {
-            font-size: 20px;
+    /*PAGINA HISTORIA*/
+        #historiaLogos {
+            .historiaLogos__h1 {
+                @include h1_600px;
+            }
+        
+            .historiaLogos__p {
+                font-size: 15px;
+                margin: 15px;
+            }
         }
         
-        .bannerPages__text {
-            font-size: 15px;
+        
+        #historiaImagenes {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            @include sizes( auto , auto );
+        
+            .historia-img__banner {
+                @include sizes( 200px , 150px );
+            }
         }
         
-        .btn-primary {
-            font-size: 15px;
-        }
-    }
-    
-    #bannerInseason {
-        display: inline-block;
-        align-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        @include sizes( 580px, 400px );
         
-        .bannerInseason__title {
-            font-size: 20px;
-            margin-top: 20px;
-        }
+        #acordionLogos {
+            margin: 20px;
+            .accordionTitle {
+                @include h1_600px;
+            }
         
-        .bannerInseason__text {
-            font-size: 16px;
-            margin: 10px;
-            margin-top: 0px;
-            padding: 10px;
-        }
+            .accordion-body {
+                @include acordiones;
+            }
         
-        .bannerInseason__body {
-            padding: 0px;
+            .accordion-button {
+                font-size: 18px;
+            }
+        
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+        
+            .accordionLogo__explicacion {
+                font-size: 15px;
+                padding: 5px;
+            } 
         }
         
-        .bannerInseason__logo {
-            @include sizes( 575px , 200px );
-            border: none;
+        #historiaActualidad {
+            .historiaActualidad__h1 {
+                @include h1_600px();
+            }
+        
+            .historiaActualidad__p {
+                font-size: 15px;
+                margin: 15px;
+            }
         }
         
-        .bannerInseaon-grupos__img {
-            @include sizes( 0px , 0px )
-        }
-    }
-    
-    #bannerAllstar {
-        display: inline-block;
-        align-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        @include sizes( 580px, 400px );
-        .bannerAllstar-logo__img {
-            @include sizes( 575px , 200px );
+        #acordionCampeonatos {
+            margin: 20px;
+            .accordionCampeonato__title {
+                    @include h1_600px;
+            }
+        
+            .accordion-button {
+                font-size: 18px;
+            }
+        
+            .accordion-body {
+                @include acordiones;
+            }
+        
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+        
+            .accordionCampeonato__explicacion {
+                font-size: 15px;
+                padding: 5px;
+            }
         }
         
-        .bannerAllstar__title {
-            margin-top: 10px;
-            font-size: 20px;
+        #lideresHistoricos {
+            .lideresHistoricos__h1 {
+                @include h1_600px;
+            }
         }
         
-        .bannerAllstar__text {
-            font-size: 15px;
-            margin: 10px;
+        #lideres__cards {
+            .card-title {
+                font-size: 15px;
+            }
+        
+            .card-text {
+                font-size: 15px;
+            }
+        
+            .list-group-item {
+                font-size: 15px;
+            }
         }
-    }
-    
-    #carouselCalendario{
-        .carouselCalendario__title {
-            font-size: 20px;
-            margin-bottom: 15px;
-            margin-top: 20px;
+        
+    /*PAGINA EQUIPO*/
+        #banner-equipo {
+            .banner-equipo__title {
+                @include h1_600px;
+            }
         }
-    }
-    
-    #carouselExampleIndicators {
-        .carousel-inner {
-            width: 440px;
-            padding: 0px;
+        
+    /*PAGINA FUNDACION*/
+        #fundacion__banner {
+            .fundacion-banner__img {
+                height: 200px;
+            }
+        
+            .fundacion-banner__title {
+                font-size: 30px;
+                margin-top: 60px;
+            }
         }
-    }
-    
-/*PAGINA HISTORIA*/
-    #historiaLogos {
-        .historiaLogos__h1 {
-            @include h1_600px;
+        
+        #fundacion__text {
+            margin: 0px;
+            .fundacion-body__text {
+                font-size: 15px;
+                margin: 15px;
+            }
+        }
+        
+        #programas__banner {
+            .programas__title {
+                @include h1_600px;
+            }
+        }
+        
+        #card__programas {
+            .card-body {
+                font-size: 15px;
+            }
+        
+            .card-title {
+                font-size: 20px;
+            }
+        }
+        
+    /*PAGINA ESTADIO*/
+        #estadio__banner {
+            .estadio-banner__title {
+                @include h1_600px;
+            }
+        
+            .estadio-banner__body {
+                font-size: 15px;
+                margin: 15px;
+            }
+        
+            .estadio-video {
+                @include sizes( 500px , 200px )
+            }
+        }
+        
+        #estadio-parte2 {
+            .estadio-parte2__text {
+                font-size: 15px;
+                margin: 15px;
+            }
+        }   
+        
+        // #ubicacion__banner {
+        //     display: flex;
+        //     align-content: center;
+        //     justify-content: center;
+        //     margin: 10px;
+        //     @include sizes( 580px , 250px );
+        
+        //     .ubicacion-banner__maps {
+        //         @include sizes(270px , 200px )
+        //     }
+        
+        //     .ubicacion-banner__text {
+        //         font-size: 12px;
+        //     }
+        // }
+        
+        #uniformes__banner {
+            .uniformes-banner__title {
+                @include h1_600px;
+            }
+        
+            .uniformes-banner__body {
+                font-size: 15px;
+                margin: 15px;
+            }
+        
+            .uniformes-banner__body2 {
+                font-size: 15px;
+                margin: 15px;
+            }
         }
     
-        .historiaLogos__p {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-    
-    
-    #historiaImagenes {
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        @include sizes( auto , auto );
-    
-        .historia-img__banner {
-            @include sizes( 200px , 150px );
-        }
-    }
-    
-    
-    #acordionLogos {
-        margin: 20px;
-        .accordionTitle {
-            @include h1_600px;
-        }
-    
-        .accordion-body {
-            @include acordiones;
-        }
-    
-        .accordion-button {
-            font-size: 18px;
-        }
-    
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-    
-        .accordionLogo__explicacion {
-            font-size: 15px;
-            padding: 5px;
-        } 
-    }
-    
-    #historiaActualidad {
-        .historiaActualidad__h1 {
-            @include h1_600px();
-        }
-    
-        .historiaActualidad__p {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-    
-    #acordionCampeonatos {
-        margin: 20px;
-        .accordionCampeonato__title {
+    /*PAGINA HAZTE FAN*/
+        #banner__bienvenida {
+            .bannerBienvenida__title {
                 @include h1_600px;
         }
     
-        .accordion-button {
-            font-size: 18px;
+            .bannerBienvenida__body {
+                font-size: 15px;
+            }
         }
     
-        .accordion-body {
-            @include acordiones;
-        }
-    
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-    
-        .accordionCampeonato__explicacion {
-            font-size: 15px;
-            padding: 5px;
+        #formulario__fan {
+            .formulario__body {
+                font-size: 15px;
+            }
         }
     }
-    
-    #lideresHistoricos {
-        .lideresHistoricos__h1 {
-            @include h1_600px;
-        }
-    }
-    
-    #lideres__cards {
-        .card-title {
-            font-size: 15px;
-        }
-    
-        .card-text {
-            font-size: 15px;
-        }
-    
-        .list-group-item {
-            font-size: 15px;
-        }
-    }
-    
-/*PAGINA EQUIPO*/
-    #banner-equipo {
-        .banner-equipo__title {
-            @include h1_600px;
-        }
-    }
-    
-/*PAGINA FUNDACION*/
-    #fundacion__banner {
-        .fundacion-banner__img {
-            height: 200px;
-        }
-    
-        .fundacion-banner__title {
-            font-size: 30px;
-            margin-top: 60px;
-        }
-    }
-    
-    #fundacion__text {
-        margin: 0px;
-        .fundacion-body__text {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-    
-    #programas__banner {
-        .programas__title {
-            @include h1_600px;
-        }
-    }
-    
-    #card__programas {
-        .card-body {
-            font-size: 15px;
-        }
-    
-        .card-title {
-            font-size: 20px;
-        }
-    }
-    
-/*PAGINA ESTADIO*/
-    #estadio__banner {
-        .estadio-banner__title {
-            @include h1_600px;
-        }
-    
-        .estadio-banner__body {
-            font-size: 15px;
-            margin: 15px;
-        }
-    
-        .estadio-video {
-            @include sizes( 500px , 200px )
-        }
-    }
-    
-    #estadio-parte2 {
-        .estadio-parte2__text {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }   
-    
-    #ubicacion__banner {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        margin: 10px;
-        @include sizes( 580px , 250px );
-    
-        .ubicacion-banner__maps {
-            @include sizes(270px , 200px )
-        }
-    
-        .ubicacion-banner__text {
-            font-size: 12px;
-        }
-    }
-    
-    #uniformes__banner {
-        .uniformes-banner__title {
-            @include h1_600px;
-        }
-    
-        .uniformes-banner__body {
-            font-size: 15px;
-            margin: 15px;
-        }
-    
-        .uniformes-banner__body2 {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-
-/*PAGINA HAZTE FAN*/
-    #banner__bienvenida {
-        .bannerBienvenida__title {
-            @include h1_600px;
-    }
-
-        .bannerBienvenida__body {
-            font-size: 15px;
-        }
-    }
-
-    #formulario__fan {
-        .formulario__body {
-            font-size: 15px;
-        }
-    }
-}
 
 /*MEDIA DE 480 PX*/
-@media (min-width: 321px) and (max-width: 480px) {
+@media (max-width: 480px) and (min-width:321px) {
 
 
-/*FOOTER*/
-    #footerBanner {
-        align-content: center;
-        .footerBanner__redes {
-            flex-wrap: wrap;
+    /*FOOTER*/
+        #footerBanner {
             align-content: center;
-            padding: 5px;
-            margin: 0px;
+            .footerBanner__redes {
+                flex-wrap: wrap;
+                align-content: center;
+                padding: 5px;
+                margin: 0px;
+            }
+    
+            .fa-brands {
+                padding: 3px;
+            }
+    
+            .footerBanner-logo__img {
+                margin: 0px;
+                @include sizes(90px , 50px );
+                padding: 8px;
+            }
+    
+            .footerBanner__fan {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sizes( 100px , 30px );
+                font-size: 10px;
+                padding: 5px;
+            }
         }
-
-        .fa-brands {
-            padding: 3px;
+    
+    
+    /*INDEX*/
+        #imagenPortada {
+            .goldenIndex {
+                background-image: none;
+                height: 300px;
+            }
+        
+            .goldenIndex__video {
+                @include sizes( 100% , 300px )
+            }
         }
-
-        .footerBanner-logo__img {
-            margin: 0px;
-            @include sizes(90px , 50px );
-            padding: 8px;
-        }
-
-        .footerBanner__fan {
-            display: flex;
-            align-items: center;
+    
+        #bannerPages {
             justify-content: center;
-            @include sizes( 100px , 30px );
-            font-size: 10px;
-            padding: 5px;
-        }
-    }
-
-
-/*INDEX*/
-    #imagenPortada {
-        .goldenIndex {
-            background-image: none;
-            height: 300px;
-        }
-    
-        .goldenIndex__video {
-            @include sizes( 100% , 300px )
-        }
-    }
-
-    #bannerPages {
-        justify-content: center;
-        margin-top: 40px;
-    
-        .card {
-            @include sizes( 300px , 370px);
-            padding: 10px;
-        }
-    
-        .card-body {
-            padding: 10px;
+            margin-top: 40px;
+        
+            .card {
+                @include sizes( 300px , 370px);
+                padding: 10px;
+            }
+        
+            .card-body {
+                padding: 10px;
+            }
+        
+            .card-img-top {
+                @include sizes( 260px, 200px )
+            }
+        
+            .bannerPages__titulo {
+                font-size: 20px;
+            }
+        
+            .bannerPages__text {
+                font-size: 15px;
+            }
+        
+            .btn-primary {
+                font-size: 15px;
+            }
         }
     
-        .card-img-top {
-            @include sizes( 260px, 200px )
+        #carouselCalendario{
+            .carouselCalendario__title {
+                font-size: 20px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+        }
+        
+    
+    /*PAGINA HISTORIA*/
+        #historiaLogos {
+            .historiaLogos__h1 {
+                @include h1_480px;
+            }
+    
+            .historiaLogos__p {
+                font-size: 15px;
+                margin: 15px;
+            }
         }
     
-        .bannerPages__titulo {
-            font-size: 20px;
+    
+        #historiaImagenes {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            @include sizes( auto , auto );
+    
+            .historia-img__banner {
+                @include sizes( 200px , 150px );
+            }
         }
     
-        .bannerPages__text {
-            font-size: 15px;
+    
+        #acordionLogos {
+            margin: 20px;
+            .accordionTitle {
+                @include h1_480px;
+            }
+    
+            .accordion-body {
+                @include acordiones;
+            }
+    
+            .accordion-button {
+                font-size: 18px;
+            }
+    
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+    
+            .accordionLogo__explicacion {
+                font-size: 15px;
+                padding: 5px;
+            } 
         }
     
-        .btn-primary {
-            font-size: 15px;
-        }
-    }
-
-    #bannerInseason {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        margin-left: 50px;
-        @include sizes( 400px , 430px );
+        #historiaActualidad {
+            .historiaActualidad__h1 {
+                @include h1_480px;
+            }
     
-        .bannerInseason__title {
-            font-size: 20px;
-            margin-top: 20px;
+            .historiaActualidad__p {
+                font-size: 15px;
+                margin: 15px;
+            }
         }
     
-        .bannerInseason__text {
-            font-size: 16px;
-            margin: 10px;
-            margin-top: 0px;
-            padding: 10px;
+        #acordionCampeonatos {
+            margin: 20px;
+            .accordionCampeonato__title {
+                @include h1_480px;
+            }
+    
+            .accordion-button {
+                font-size: 18px;
+            }
+    
+            .accordion-body {
+                @include acordiones;
+            }
+    
+            .accordioExample__img {
+                @include sizes( 200px, 180px);
+                padding: 10px;
+            }
+    
+            .accordionCampeonato__explicacion {
+                font-size: 15px;
+                padding: 5px;
+            }
         }
     
-        .bannerInseason__body {
-            padding: 10px;
+        #lideresHistoricos {
+            .lideresHistoricos__h1 {
+                @include h1_480px;
+            }
         }
     
-        .bannerInseason__logo{
-            @include sizes( 370px , 200px );
-            border: none;
+        #lideres__cards {
+            .card-title {
+                font-size: 15px;
+            }
+    
+            .card-text {
+                font-size: 15px;
+            }
+    
+            .list-group-item {
+                font-size: 15px;
+            }
         }
     
-        .bannerInseaon-grupos__img {
-            @include sizes( 0px , 0px )
-        }
-    }
-
-    #bannerAllstar {
-        display: inline-block;
-        align-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        margin-left: 50px;
-        @include sizes( 400px, 430px );
-        .bannerAllstar-logo__img {
-            @include sizes( 390px , 200px );
-            padding: 10px;
+    /*PAGINA EQUIPO*/
+        #banner-equipo {
+            .banner-equipo__title {
+                @include h1_480px();
+            }
         }
     
-        .bannerAllstar__title {
-            margin-top: 10px;
-            font-size: 20px;
+    /*PAGINA FUNDACION*/
+        #fundacion__banner {
+            .fundacion-banner__img {
+                height: 200px;
+            }
+    
+            .fundacion-banner__title {
+                font-size: 30px;
+                margin-top: 60px;
+            }
         }
     
-        .bannerAllstar__text {
-            font-size: 15px;
-            margin: 10px;
+        #fundacion__text {
+            margin: 0px;
+            .fundacion-body__text {
+                font-size: 15px;
+                margin: 15px;
+            }
         }
-    }
-
-    #carouselCalendario{
-        .carouselCalendario__title {
-            font-size: 20px;
-            margin-bottom: 15px;
-            margin-top: 20px;
-        }
-    }
     
-    #carouselExampleIndicators {
-        .carousel-inner {
-            width: 350px;
-            padding: 0px;
+        #programas__banner {
+            .programas__title {
+                @include h1_320px;
+            }
+        }
+    
+        #card__programas {
+            .card-body {
+                font-size: 15px;
+            }
+    
+            .card-title {
+                font-size: 20px;
+            }
+        }
+    
+    /*PAGINA ESTADIO*/
+        #estadio__banner {
+            .estadio-banner__title {
+                @include h1_480px;
+            }
+    
+            .estadio-banner__body {
+                font-size: 15px;
+                margin: 15px;
+            }
+    
+            .estadio-video {
+                @include sizes( 350px , 200px )
+            }
+        }
+    
+        #estadio-parte2 {
+            .estadio-parte2__text {
+                font-size: 15px;
+                margin: 15px;
+            }
+        }   
+    
+        // #ubicacion__banner {
+        //     display: flex;
+        //     align-content: center;
+        //     justify-content: center;
+        //     margin: 10px;
+        //     @include sizes( 460px , 250px );
+    
+        //     .ubicacion-banner__maps {
+        //         @include sizes(270px , 200px )
+        //     }
+    
+        //     .ubicacion-banner__text {
+        //         font-size: 12px;
+        //     }
+        // }
+    
+        #uniformes__banner {
+            .uniformes-banner__title {
+                @include h1_480px;
+            }
+    
+            .uniformes-banner__body {
+                font-size: 15px;
+                margin: 15px;
+            }
+    
+            .uniformes-banner__body2 {
+                font-size: 15px;
+                margin: 15px;
+            }
+        }
+    
+        /*PAGINA HAZTE FAN*/
+        #banner__bienvenida {
+            .bannerBienvenida__title {
+                @include h1_480px;
+        }
+    
+            .bannerBienvenida__body {
+                font-size: 15px;
+            }
+        }
+    
+        #formulario__fan {
+            .formulario__body {
+                font-size: 15px;
+            }
         }
     }
-
-/*PAGINA HISTORIA*/
-    #historiaLogos {
-        .historiaLogos__h1 {
-            @include h1_480px;
-        }
-
-        .historiaLogos__p {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-
-
-    #historiaImagenes {
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        @include sizes( auto , auto );
-
-        .historia-img__banner {
-            @include sizes( 200px , 150px );
-        }
-    }
-
-
-    #acordionLogos {
-        margin: 20px;
-        .accordionTitle {
-            @include h1_480px;
-        }
-
-        .accordion-body {
-            @include acordiones;
-        }
-
-        .accordion-button {
-            font-size: 18px;
-        }
-
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-
-        .accordionLogo__explicacion {
-            font-size: 15px;
-            padding: 5px;
-        } 
-    }
-
-    #historiaActualidad {
-        .historiaActualidad__h1 {
-            @include h1_480px;
-        }
-
-        .historiaActualidad__p {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-
-    #acordionCampeonatos {
-        margin: 20px;
-        .accordionCampeonato__title {
-            @include h1_480px;
-        }
-
-        .accordion-button {
-            font-size: 18px;
-        }
-
-        .accordion-body {
-            @include acordiones;
-        }
-
-        .accordioExample__img {
-            @include sizes( 200px, 180px);
-            padding: 10px;
-        }
-
-        .accordionCampeonato__explicacion {
-            font-size: 15px;
-            padding: 5px;
-        }
-    }
-
-    #lideresHistoricos {
-        .lideresHistoricos__h1 {
-            @include h1_480px;
-        }
-    }
-
-    #lideres__cards {
-        .card-title {
-            font-size: 15px;
-        }
-
-        .card-text {
-            font-size: 15px;
-        }
-
-        .list-group-item {
-            font-size: 15px;
-        }
-    }
-
-/*PAGINA EQUIPO*/
-    #banner-equipo {
-        .banner-equipo__title {
-            @include h1_480px();
-        }
-    }
-
-/*PAGINA FUNDACION*/
-    #fundacion__banner {
-        .fundacion-banner__img {
-            height: 200px;
-        }
-
-        .fundacion-banner__title {
-            font-size: 30px;
-            margin-top: 60px;
-        }
-    }
-
-    #fundacion__text {
-        margin: 0px;
-        .fundacion-body__text {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-
-    #programas__banner {
-        .programas__title {
-            @include h1_320px;
-        }
-    }
-
-    #card__programas {
-        .card-body {
-            font-size: 15px;
-        }
-
-        .card-title {
-            font-size: 20px;
-        }
-    }
-
-/*PAGINA ESTADIO*/
-    #estadio__banner {
-        .estadio-banner__title {
-            @include h1_480px;
-        }
-
-        .estadio-banner__body {
-            font-size: 15px;
-            margin: 15px;
-        }
-
-        .estadio-video {
-            @include sizes( 350px , 200px )
-        }
-    }
-
-    #estadio-parte2 {
-        .estadio-parte2__text {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }   
-
-    #ubicacion__banner {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        margin: 10px;
-        @include sizes( 460px , 250px );
-
-        .ubicacion-banner__maps {
-            @include sizes(270px , 200px )
-        }
-
-        .ubicacion-banner__text {
-            font-size: 12px;
-        }
-    }
-
-    #uniformes__banner {
-        .uniformes-banner__title {
-            @include h1_480px;
-        }
-
-        .uniformes-banner__body {
-            font-size: 15px;
-            margin: 15px;
-        }
-
-        .uniformes-banner__body2 {
-            font-size: 15px;
-            margin: 15px;
-        }
-    }
-
-    /*PAGINA HAZTE FAN*/
-    #banner__bienvenida {
-        .bannerBienvenida__title {
-            @include h1_480px;
-    }
-
-        .bannerBienvenida__body {
-            font-size: 15px;
-        }
-    }
-
-    #formulario__fan {
-        .formulario__body {
-            font-size: 15px;
-        }
-    }
-}
 
 /*MEDIA DE 320 PX*/
 @media (max-width: 320px) {
@@ -1599,65 +1334,6 @@
         }
     }
 
-    #bannerInseason {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-        margin: 10px;
-        margin-left: 40px;
-        @include sizes( 260px , 550px );
-    
-        .bannerInseason__title {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-    
-        .bannerInseason__text {
-            font-size: 16px;
-            margin: 10px;
-            margin-top: 0px;
-            padding: 10px;
-        }
-    
-        .bannerInseason__body {
-            padding: 10px;
-        }
-    
-        .bannerInseason__logo{
-            @include sizes( 240px , 180px );
-            border: none;
-        }
-    
-        .bannerInseaon-grupos__img {
-            @include sizes( 0px , 0px )
-        }
-    }
-
-    #bannerAllstar {
-        display: inline-block;
-        align-items: center;
-        margin-top: 50px;
-        margin: 10px;
-        margin-left: 40px;
-        padding: 10px;
-        @include sizes( 260px, 600px );
-
-        .bannerAllstar-logo__img {
-            @include sizes( 235px , 200px )
-        }
-
-        .bannerAllstar__title {
-            margin-top: 10px;
-            font-size: 20px;
-        }
-
-        .bannerAllstar__text {
-            font-size: 15px;
-            margin: 10px;
-        }
-    }
-
     #carouselCalendario{
         .carouselCalendario__title {
             font-size: 20px;
@@ -1665,12 +1341,6 @@
         }
     }
 
-    #carouselExampleIndicators {
-        .carousel-inner {
-            width: 230px;
-            padding: 0px;
-        }
-    }
 
 /*PAGINA HISTORIA*/
     #historiaLogos {
@@ -1843,19 +1513,19 @@
         }
     }
 
-    #ubicacion__banner {
-        display: inline-block;
-        margin: 10px;
-        @include sizes( 290px , 350px );
+    // #ubicacion__banner {
+    //     display: inline-block;
+    //     margin: 10px;
+    //     @include sizes( 290px , 350px );
 
-        .ubicacion-banner__maps {
-            @include sizes(270px , 200px )
-        }
+    //     .ubicacion-banner__maps {
+    //         @include sizes(270px , 200px )
+    //     }
 
-        .ubicacion-banner__text {
-            font-size: 12px;
-        }
-    }
+    //     .ubicacion-banner__text {
+    //         font-size: 12px;
+    //     }
+    // }
 
     #uniformes__banner {
         .uniformes-banner__title {

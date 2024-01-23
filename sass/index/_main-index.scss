@@ -27,88 +27,63 @@
 }
 
 
-  /*INDEX INSEASON TOURNAMENT*/
+/*INDEX INSEASON TOURNAMENT - ALL STAR GAME*/
 
-  #bannerInseason {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    margin-top: 100px;
-    border-style: solid;
-    border-color: #e4c145;
+#banner-index__card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+  gap: 30px;
+  margin: 50px 20px;
 
-    .bannerInseason__body{
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-        height: 400px;
-        padding: 50px;
+    .banner-inseason__card {
+      background-color: black;
+      border: #e4c145;
+      border-style: solid;
     }
 
-    .bannerInseason__logo {
-        width: 700px;
-        height: 200px;
-    }
-
-    .bannerInseason__logo {
-        width: 700px;
-        height: 200px;
-        border-color: #e4c145;
-        border-style: solid;
-    }
-
-    .bannerInseason__title{
-        font-family: 'Oswald', sans-serif;
-        font-size: 35px;
-        text-align: center;
-        color: white;
-        margin-top: 10px;
-    }
-
-    .bannerInseason__text {
-        font-family:"Barlow Condensed", sans-serif;
-        font-size: 20px;
-        text-align: center;
-        color: white;
-        margin-bottom: 15px;
-    }
-
-    .bannerInseaon-grupos__img {
-        @include sizes(400px , 450px);
-    }
-  }
-
-  /*INDEX ALL STAR GAME 2025*/
-  
-  #bannerAllstar {
-    margin: 20px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    border-style: solid;
-    border-color: #e4c145;
-    display: flex;
-    align-items: center;
-
-    .bannerAllstar__title {
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        font-size: 35px;
-        color: white;
-    }
-
-    .bannerAllstar__text{
-      text-align: center;
-      margin: 20px;
+    .banner-inseason__title {
       font-family: "Barlow Condensed", sans-serif;
+      text-align: center;
       font-size: 25px;
       color: white;
+      padding: 8px;
     }
 
-  .bannerAllstar-logo__img{
-    @include sizes(500px , 450px);
-  }
+    .banner-inseason__text {
+      font-family: "Barlow Condensed", sans-serif;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      padding: 4px;
+    }
+
+
+    .banner-allstar__card {
+      background-color: black;
+      border: #e4c145;
+      border-style: solid;
+    }
+
+    .banner-allstar__title {
+      font-family: "Barlow Condensed", sans-serif;
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      padding: 8px;
+    }
+
+    .banner-allstar__text {
+      font-family: "Barlow Condensed", sans-serif;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      padding: 4px;
+    }
 }
+
 
   /*INDEX CALENDARIO*/
 #carouselCalendario { 
@@ -123,10 +98,7 @@
 
 
 #carouselExampleIndicators {
-    .carousel-inner {
-      width: 900px;
-      padding: 20px;
-      margin-left: 14%;
-      margin-bottom: 40px;
+    .carousel-calendario__img {
+      padding: 25px;
   }
 }  

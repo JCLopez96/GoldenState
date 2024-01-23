@@ -2,7 +2,7 @@
 @mixin flex-desing {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 @mixin sizes ($width , $height) {
@@ -15,7 +15,7 @@
 #bannerPages {
     @include flex-desing;
     margin: 30px;
-    margin-top: 100px;
+    margin-top: 70px;
     flex-wrap: wrap;
     gap: 10px;
 
