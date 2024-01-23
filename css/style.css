@@ -1718,6 +1718,12 @@ li, a {
     font-size: 18px;
     margin: 20px;
   }
+  #ubicacion__banner {
+    margin: 20px;
+  }
+  #ubicacion__banner .ubicacion-banner__maps {
+    width: 280px;
+  }
   #uniformes__banner .uniformes-banner__title {
     font-size: 20px;
     margin: 20px 90px;
