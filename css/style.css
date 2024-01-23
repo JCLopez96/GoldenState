@@ -1568,6 +1568,9 @@ li, a {
   #bannerPages .btn-primary {
     font-size: 18px;
   }
+  #banner-index__card {
+    margin-bottom: 20px;
+  }
   #carouselCalendario .carouselCalendario__title {
     font-size: 20px;
     margin-bottom: 15px;
