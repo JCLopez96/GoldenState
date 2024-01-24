@@ -25,14 +25,17 @@
         border-color: black;
         border-style: solid;
         border-radius: 20px;
-        align-items: center;
     }
 
     .card-img-top {
-        @include sizes(260px , 290px);
+        @include sizes(245px , 290px);
         border-radius: 20px;
+        transition: 1s;
 
-
+            &:hover {
+                transition: 1s;
+                transform: scale(1.1, 1.1);
+            }
     }
 
     .bannerPages__titulo{

@@ -44,6 +44,10 @@
     .accordioExample__img {
         @include sizes(auto , 250px);
         padding: 30px;
+        transition: 1s;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
     }
 
     .accordion-body{
@@ -96,6 +100,10 @@
     .accordioExample__img {
         @include sizes(auto , 250px);
         padding: 30px;
+        transition: 1s;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
     }
 
     .accordion-body{

@@ -34,6 +34,17 @@
         text-align: center;
         align-items: center;
         padding: 10px;
+        transition: 0.5s;
+
+        &:hover {
+            box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.616);
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    .footer-fan__text {
+        color: black;
+        text-decoration: none;
     }
 
     .footerBanner__fan :hover {
@@ -49,5 +60,11 @@
 
     .fa-brands {
         padding: 5px;
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.724);
+            transform: scale(1.2, 1.2);
     }
+}
 }

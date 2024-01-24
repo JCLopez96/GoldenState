@@ -50,8 +50,15 @@
     flex-wrap: wrap;
     margin-bottom: 30px;
 
+
     .card {
         @include cards-design;
+        transition: 1s;
+
+        &:hover {
+            box-shadow: 10px 15px 20px #0411ff7d (0, 34, 254, 0.463);
+            transform: scale(1.1, 1.1);
+        }
     }
 
     .list-group-item {

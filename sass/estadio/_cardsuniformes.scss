@@ -22,6 +22,7 @@
     gap: 30px;
     flex-wrap: wrap;
     padding: 20px;
+    margin-bottom: 20px;
     
     .card {
         align-items: center;
@@ -29,8 +30,14 @@
         background-color: black;
         border: solid;
         border-color: #e4c145;
+        transition: 0.5s;
+        
+        &:hover {
+            box-shadow: 10px 15px 20px rgba(246, 223, 12, 0.356);
+            transform: scale(1.1, 1.1);
 
-    }
+        }
+}
     .uniforme-cards__img {
         width: 200px;
         height: 200px;
