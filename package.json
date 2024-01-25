@@ -1,0 +1,11 @@
+{
+  "name": "goldencoder",
+  "version": "1.0.0",
+  "description": "Sitio web sobre Golden State Warriors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Lopez",
+  "license": "ISC"
+}
